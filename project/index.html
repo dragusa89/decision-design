@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Decision Design — Ádám Drágus</title>
+<meta name="description" content="Decision Design — a private advisory practice for designers, freelancers, and agencies who want to control the decisions that determine their work's fate." />
+<link rel="stylesheet" href="styles.css" />
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<header class="nav" data-screen-label="Nav">
+  <a class="nav__brand" href="index.html" aria-label="Decision Design — Ádám Drágus">
+    Ádám Drágus<span class="slash">/</span>Decision Design
+  </a>
+
+  <nav class="nav__links" aria-label="Primary">
+    <a class="nav__link" href="diagnostic.html">
+      <span data-lang="en">The Diagnostic</span>
+      <span data-lang="hu">A Diagnosztika</span>
+    </a>
+    <a class="nav__link" href="freelancers.html">
+      <span data-lang="en">For Freelancers</span>
+      <span data-lang="hu">Szabadúszóknak</span>
+    </a>
+    <a class="nav__link" href="agencies.html">
+      <span data-lang="en">For Agencies</span>
+      <span data-lang="hu">Ügynökségeknek</span>
+    </a>
+    <a class="nav__link" href="leaders.html">
+      <span data-lang="en">For Leaders</span>
+      <span data-lang="hu">Vezetőknek</span>
+    </a>
+    <a class="nav__link" href="about.html">
+      <span data-lang="en">About</span>
+      <span data-lang="hu">Rólam</span>
+    </a>
+    <span class="nav__lang" role="group" aria-label="Language">
+      <button type="button" data-set="en">EN</button>
+      <span class="sep">/</span>
+      <button type="button" data-set="hu">HU</button>
+    </span>
+  </nav>
+
+  <button class="nav__menu-toggle" aria-label="Open menu">Menu</button>
+</header>
+
+<!-- Mobile nav overlay -->
+<aside class="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__close-row">
+    <button class="link-ghost" data-close>Close</button>
+  </div>
+  <div class="mobile-nav__links">
+    <a class="mobile-nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
+    <a class="mobile-nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
+    <a class="mobile-nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
+    <a class="mobile-nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
+    <a class="mobile-nav__link" href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a>
+  </div>
+  <div class="mobile-nav__lang">
+    <span class="nav__lang">
+      <button type="button" data-set="en">EN</button>
+      <span class="sep">/</span>
+      <button type="button" data-set="hu">HU</button>
+    </span>
+  </div>
+</aside>
+
+<!-- ============== HERO ============== -->
+<main>
+<section class="hero container" data-screen-label="01 Home — Hero">
+  <div class="reveal">
+    <span class="eyebrow hero__eyebrow">Decision Design</span>
+  </div>
+
+  <h1 class="reveal" style="--reveal-delay:120ms">
+    <span data-lang="en">Design doesn't fail<br/>because it's weak.<br/><em>It fails at the table.</em></span>
+    <span data-lang="hu">A design nem azért bukik el,<br/>mert gyenge.<br/><em>Az asztalnál bukik el.</em></span>
+  </h1>
+
+  <p class="hero__lede reveal" style="--reveal-delay:260ms">
+    <span data-lang="en">The decisions that determine your work's fate happen before you're in the room. I work with designers, freelancers, and agencies who are ready to control the frame — not just the deliverable.</span>
+    <span data-lang="hu">A munkád sorsát eldöntő pillanatok azelőtt zajlanak, hogy belépnél a szobába. Olyan designerekkel, szabadúszókkal és ügynökségekkel dolgozom, akik készen állnak arra, hogy a keretet irányítsák — nem csak a végterméket.</span>
+  </p>
+
+  <div class="hero__cta-row reveal" style="--reveal-delay:380ms">
+    <a class="cta" href="diagnostic.html">
+      <span data-lang="en">Start with a Diagnostic</span>
+      <span data-lang="hu">Kezdjük egy Diagnosztikával</span>
+      <span class="cta__arrow">→</span>
+    </a>
+    <span class="note-italic">
+      <span data-lang="en">Limited availability. Invitation-based beyond the Diagnostic.</span>
+      <span data-lang="hu">Korlátozott kapacitás. A Diagnosztikán túl kizárólag meghívás alapján.</span>
+    </span>
+  </div>
+
+  <aside class="hero__meta" aria-hidden="true">
+    <span class="hero__meta-line is-gold">№ 01 — Practice</span>
+    <span class="hero__meta-line">Budapest <span class="num">47.49° N</span></span>
+    <span class="hero__meta-line">Est. <span class="num">MMXXV</span></span>
+  </aside>
+</section>
+
+<hr class="divider" />
+
+<!-- ============== THE PROBLEM ============== -->
+<section class="section" data-screen-label="02 Home — The Problem">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label">
+          <span data-lang="en">The Core Problem</span>
+          <span data-lang="hu">Az Alapprobléma</span>
+        </span>
+        <h2>
+          <span data-lang="en">Most design advice assumes the decision moment is <em>visible.</em> It isn't.</span>
+          <span data-lang="hu">A legtöbb design-tanács feltételezi, hogy a döntés pillanata <em>látható.</em> Nem az.</span>
+        </h2>
+      </div>
+      <div class="split__body prose reveal" style="--reveal-delay:160ms">
+        <div data-lang-block="en">
+          <p>The real decisions happen in hallways. In Slack threads. In a five-minute call that nobody framed as a decision. By the time you present your work, the frame is already set — by someone else, without you.</p>
+          <p>This is not a design quality problem.<br/>This is not a communication skills problem.<br/>This is a <em>decision architecture</em> problem.</p>
+          <p>And nobody is talking about it.</p>
+        </div>
+        <div data-lang-block="hu">
+          <p>A valódi döntések folyosókon születnek. Slack-szálakban. Egy ötperces hívásban, amit senki sem tekintett döntésnek. Mire bemutatod a munkádat, a keret már megvan — valaki más alkotta meg, nélküled.</p>
+          <p>Ez nem minőségi probléma.<br/>Ez nem kommunikációs probléma.<br/>Ez <em>döntésarchitektúra</em>-probléma.</p>
+          <p>És senki nem beszél róla.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== THREE AUDIENCES ============== -->
+<section class="section surface" data-screen-label="03 Home — Audiences">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="hairline"></span>
+      <span class="label">
+        <span data-lang="en">Who This Is For</span>
+        <span data-lang="hu">Kiknek Szól</span>
+      </span>
+      <h2 style="margin-top:24px;">
+        <span data-lang="en">Three audiences.<br/>One underlying problem.</span>
+        <span data-lang="hu">Három közönség.<br/>Egy közös probléma.</span>
+      </h2>
+    </header>
+
+    <div class="cards-3 reveal">
+      <article class="card">
+        <span class="card__num">01</span>
+        <h3>
+          <span data-lang="en">For Freelancers</span>
+          <span data-lang="hu">Szabadúszóknak</span>
+        </h3>
+        <p>
+          <span data-lang="en">You're losing pricing leverage without understanding why. The moment a client asks what this will cost — everything before that moment determines whether you have to defend the number or whether it's already obvious.</span>
+          <span data-lang="hu">Áralku-pozíciót veszítesz, anélkül hogy értenéd miért. Amikor az ügyfél megkérdezi, mennyibe kerül — minden, ami előtte történt, eldönti, hogy védened kell a számot, vagy már magától értetődő.</span>
+        </p>
+        <a class="cta cta--small card__cta" href="freelancers.html">
+          <span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span>
+          <span class="cta__arrow">→</span>
+        </a>
+      </article>
+
+      <article class="card">
+        <span class="card__num">02</span>
+        <h3>
+          <span data-lang="en">For Agencies</span>
+          <span data-lang="hu">Ügynökségeknek</span>
+        </h3>
+        <p>
+          <span data-lang="en">You're not losing on delivery. You're losing in the conversation that happens before the brief is even signed. Scope creep, pricing pressure, over-servicing — all decision failures.</span>
+          <span data-lang="hu">Nem a kivitelezésen veszítesz. A beszélgetésen, ami a brief aláírása előtt zajlik. Scope creep, árnyomás, túlszolgáltatás — mind döntési kudarcok.</span>
+        </p>
+        <a class="cta cta--small card__cta" href="agencies.html">
+          <span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span>
+          <span class="cta__arrow">→</span>
+        </a>
+      </article>
+
+      <article class="card">
+        <span class="card__num">03</span>
+        <h3>
+          <span data-lang="en">For Design Leaders</span>
+          <span data-lang="hu">Designvezetőknek</span>
+        </h3>
+        <p>
+          <span data-lang="en">You're present in meetings. You're absent from the real decisions. Organizational dynamics sideline design before it gets a voice — and by the time you present, the frame is already set.</span>
+          <span data-lang="hu">Jelen vagy a meetingeken. Hiányzol a valódi döntésekből. Szervezeti dinamikák hangtalanítják a designt, és mire prezentálsz, a keret már adott.</span>
+        </p>
+        <a class="cta cta--small card__cta" href="leaders.html">
+          <span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span>
+          <span class="cta__arrow">→</span>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PRINCIPLE PULLQUOTE ============== -->
+<section class="pullquote" data-screen-label="04 Home — Principle">
+  <div class="container reveal">
+    <p class="pullquote__text">
+      <span data-lang="en">"Influence belongs to whoever handles uncertainty best."</span>
+      <span data-lang="hu">„A befolyás azé, aki a bizonytalanságot a legjobban kezeli."</span>
+    </p>
+    <span class="pullquote__attribution">— Decision Design</span>
+  </div>
+</section>
+
+<!-- ============== ENTRY POINT ============== -->
+<section class="section" data-screen-label="05 Home — Diagnostic">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label">
+          <span data-lang="en">Start Here</span>
+          <span data-lang="hu">Itt Kezdődik</span>
+        </span>
+        <h2>
+          <span data-lang="en">The Diagnostic.</span>
+          <span data-lang="hu">A Diagnosztika.</span>
+        </h2>
+      </div>
+      <div class="split__body prose reveal" style="--reveal-delay:160ms">
+        <div data-lang-block="en">
+          <p>A structured 60–90 minute session. We map your specific decision problem — where you're losing control, which conversations are happening without you, what frame is being set before you arrive.</p>
+          <p>You leave with clarity and a concrete frame.<br/><em>Not a to-do list. Not a solution. Clarity.</em></p>
+        </div>
+        <div data-lang-block="hu">
+          <p>Egy strukturált, 60–90 perces beszélgetés. Feltérképezzük a saját döntési problémádat — hol veszíted az irányítást, milyen beszélgetések zajlanak nélküled, milyen keret formálódik mielőtt megérkeznél.</p>
+          <p>Tisztánlátással és konkrét kerettel távozol.<br/><em>Nem feladatlistával. Nem megoldással. Tisztánlátással.</em></p>
+        </div>
+        <div style="margin-top: 40px; display:flex; align-items:center; gap:32px; flex-wrap:wrap;">
+          <a class="cta" href="diagnostic.html">
+            <span data-lang="en">Book a Diagnostic</span>
+            <span data-lang="hu">Időpont a Diagnosztikára</span>
+            <span class="cta__arrow">→</span>
+          </a>
+          <span class="note-italic">
+            <span data-lang="en">This is not a free intro call. The Diagnostic is the work.</span>
+            <span data-lang="hu">Ez nem ingyenes ismerkedő hívás. A Diagnosztika maga a munka.</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer" data-screen-label="06 Footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__col">
+        <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
+        <p class="footer__tag">
+          <span data-lang="en">A private advisory practice.<br/>Budapest.</span>
+          <span data-lang="hu">Privát tanácsadói praxis.<br/>Budapest.</span>
+        </p>
+      </div>
+      <div class="footer__col">
+        <h4><span data-lang="en">Practice</span><span data-lang="hu">Praxis</span></h4>
+        <ul>
+          <li><a href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a></li>
+          <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></h4>
+        <ul>
+          <li><a href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a></li>
+          <li><a href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a></li>
+          <li><a href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></h4>
+        <ul>
+          <li><a href="mailto:adam@decisiondesign.studio">adam@decisiondesign.studio</a></li>
+          <li><a href="diagnostic.html"><span data-lang="en">Book the Diagnostic</span><span data-lang="hu">Diagnosztika foglalása</span></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__legal">
+      <span>© 2026 Ádám Drágus. <span data-lang="en">All rights reserved.</span><span data-lang="hu">Minden jog fenntartva.</span></span>
+      <span class="note-italic">
+        <span data-lang="en">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span>
+        <span data-lang="hu">Decision Design — azoknak a pillanatoknak a tervezése, amelyek eldöntik, hogy a munkád életben marad-e.</span>
+      </span>
+    </div>
+  </div>
+</footer>
+
+<div class="page-marker"><span class="num">01</span><span data-lang="en">Home</span><span data-lang="hu">Kezdőlap</span></div>
+
+</main>
+</body>
+</html>

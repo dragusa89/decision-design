@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Pricing &amp; Booking — Decision Design</title>
+<link rel="stylesheet" href="styles.css" />
+<script src="site.js" defer></script>
+</head>
+<body>
+
+<header class="nav">
+  <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
+  <nav class="nav__links">
+    <a class="nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
+    <a class="nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
+    <a class="nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
+    <a class="nav__link" href="leaders.html"><span data-lang="en">For Leaders</span><span data-lang="hu">Vezetőknek</span></a>
+    <a class="nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
+    <span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span>
+  </nav>
+  <button class="nav__menu-toggle">Menu</button>
+</header>
+
+<aside class="mobile-nav">
+  <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
+  <div class="mobile-nav__links">
+    <a class="mobile-nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
+    <a class="mobile-nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
+    <a class="mobile-nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
+    <a class="mobile-nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
+    <a class="mobile-nav__link" href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a>
+  </div>
+  <div class="mobile-nav__lang"><span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span></div>
+</aside>
+
+<main>
+<section class="hero container" data-screen-label="01 Pricing — Hero">
+  <div class="reveal"><span class="eyebrow hero__eyebrow"><span data-lang="en">Pricing &amp; Booking</span><span data-lang="hu">Árak &amp; Foglalás</span></span></div>
+  <h1 class="reveal" style="--reveal-delay:120ms">
+    <span data-lang="en">One price.<br/>Stated plainly.<br/><em>Booked the same way.</em></span>
+    <span data-lang="hu">Egy ár.<br/>Egyértelműen.<br/><em>A foglalás ugyanígy.</em></span>
+  </h1>
+  <p class="hero__lede reveal" style="--reveal-delay:260ms">
+    <span data-lang="en">The Diagnostic is the only entry point to the practice — and the only service with a published price. Beyond it, every engagement is shaped to the situation, and every conversation about it happens after we've already done the work together once.</span>
+    <span data-lang="hu">A Diagnosztika az egyetlen belépési pont a praxisba — és az egyetlen szolgáltatás közzétett árral. Azon túl minden együttműködés a helyzetre szabott, és minden ilyen beszélgetés azután történik, hogy már egyszer együtt dolgoztunk.</span>
+  </p>
+
+  <aside class="hero__meta" aria-hidden="true">
+    <span class="hero__meta-line is-gold">№ 07 — Booking</span>
+    <span class="hero__meta-line"><span data-lang="en">Slots</span><span data-lang="hu">Időpontok</span> <span class="num">Mon–Thu</span></span>
+    <span class="hero__meta-line"><span data-lang="en">Currency</span><span data-lang="hu">Pénznem</span> <span class="num">EUR · HUF</span></span>
+  </aside>
+</section>
+
+<hr class="divider" />
+
+<!-- THE PRICE -->
+<section class="section surface" data-screen-label="02 Pricing — The Price">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="hairline"></span>
+      <span class="label"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></span>
+      <h2 style="margin-top:24px;"><span data-lang="en">A single, fixed fee.<br/>Inclusive of everything.</span><span data-lang="hu">Egyetlen, fix díj.<br/>Mindent magában foglalva.</span></h2>
+    </header>
+
+    <div class="reveal" style="border-top:1px solid var(--border); border-bottom:1px solid var(--border); padding: 64px 0; display:grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;">
+      <div>
+        <span class="label" style="margin-bottom: 24px;"><span data-lang="en">Investment</span><span data-lang="hu">Befektetés</span></span>
+        <div class="serif" style="font-style:italic; font-size: clamp(56px, 7vw, 88px); line-height: 1; color: var(--white); margin-bottom: 12px; letter-spacing: -0.02em;">€480</div>
+        <div class="note-italic" style="font-size: 15px;"><span data-lang="en">or HUF 190,000 — 60–90 minutes, 1:1.</span><span data-lang="hu">vagy 190.000 Ft — 60–90 perc, 1:1.</span></div>
+      </div>
+      <div class="prose" style="border-left: 1px solid var(--border); padding-left: 56px;">
+        <p data-lang-block="en" style="margin: 0;">
+          The fee covers preparation, the session itself, and a written summary of the frame we map together. It is paid in full at booking. No retainer follows automatically.
+        </p>
+        <p data-lang-block="hu" style="margin: 0;">
+          A díj magában foglalja a felkészülést, az alkalmat és a közösen feltérképezett keret írásos összefoglalóját. Foglaláskor egészben fizetendő. Automatikus retainer nem követi.
+        </p>
+      </div>
+    </div>
+
+    <div class="reveal" style="margin-top: 48px; display: flex; align-items: center; gap: 32px; flex-wrap: wrap;">
+      <a class="cta" href="#book"><span data-lang="en">Book a Diagnostic</span><span data-lang="hu">Időpont a Diagnosztikára</span><span class="cta__arrow">→</span></a>
+      <span class="note-italic"><span data-lang="en">Slots are limited and held two weeks in advance.</span><span data-lang="hu">A helyek korlátozottak, két hétre előre tartom őket.</span></span>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT IT INCLUDES -->
+<section class="section" data-screen-label="03 Pricing — Inclusions">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label"><span data-lang="en">What's Included</span><span data-lang="hu">Mit Tartalmaz</span></span>
+        <h2><span data-lang="en">No add-ons.<br/>No upsells.<br/><em>One transaction.</em></span><span data-lang="hu">Nincs kiegészítő.<br/>Nincs upsell.<br/><em>Egy tranzakció.</em></span></h2>
+      </div>
+      <div class="split__body reveal" style="--reveal-delay:160ms">
+        <div class="services" style="border-top:0;">
+          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
+            <span class="service__num">i.</span>
+            <div class="service__body">
+              <h3 style="font-size:22px;"><span data-lang="en">Pre-session preparation</span><span data-lang="hu">Felkészülés az alkalom előtt</span></h3>
+              <p><span data-lang="en">A short intake form. I review your situation in writing before we meet so the time on the call is spent on the problem, not on context.</span><span data-lang="hu">Rövid bemeneti kérdőív. Írásban átnézem a helyzeted az alkalom előtt, hogy a hívás ideje a problémára menjen, ne a kontextusra.</span></p>
+            </div>
+          </div>
+          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
+            <span class="service__num">ii.</span>
+            <div class="service__body">
+              <h3 style="font-size:22px;"><span data-lang="en">The session</span><span data-lang="hu">Az alkalom</span></h3>
+              <p><span data-lang="en">60–90 minutes, video call, English or Hungarian. Recorded only on request, kept by you, never published or reused.</span><span data-lang="hu">60–90 perc, videohívás, angolul vagy magyarul. Felvétel csak kérésre, nálad marad, soha nem közöljük újra.</span></p>
+            </div>
+          </div>
+          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0; border-bottom: 0;">
+            <span class="service__num">iii.</span>
+            <div class="service__body">
+              <h3 style="font-size:22px;"><span data-lang="en">A written frame</span><span data-lang="hu">Írásos keret</span></h3>
+              <p><span data-lang="en">Within 72 hours, a one-page document: what we mapped, the frame you arrived at, and the next decision moment to watch. Yours to keep.</span><span data-lang="hu">72 órán belül egyoldalas dokumentum: amit feltérképeztünk, a keret, amire jutottál, és a következő döntési pillanat, amit figyelni érdemes. A tiéd.</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEYOND THE DIAGNOSTIC -->
+<section class="section surface" data-screen-label="04 Pricing — Beyond">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label"><span data-lang="en">Beyond the Diagnostic</span><span data-lang="hu">A Diagnosztikán Túl</span></span>
+        <h2><span data-lang="en">Pricing<br/>without<br/>brochures.</span><span data-lang="hu">Árképzés<br/>brosúrák<br/>nélkül.</span></h2>
+      </div>
+      <div class="split__body prose reveal" style="--reveal-delay:160ms">
+        <div data-lang-block="en">
+          <p>Project engagements are quoted as fixed ranges, written specifically for the situation we mapped together in the Diagnostic. No tier sheets, no comparison tables.</p>
+          <p>Retainers are <em>by invitation only</em>, and the proposal is personal. They are never offered on the day of the Diagnostic, and never offered to someone I haven't already worked with on a defined engagement.</p>
+          <p class="note-italic" style="margin-top: 32px;"><span data-lang="en">If you'd like to understand the order of magnitude before booking, ask in the booking form. I'll answer plainly.</span><span data-lang="hu">Ha foglalás előtt szeretnéd tudni a nagyságrendet, írd meg a foglalási űrlapon. Egyenesen válaszolok.</span></p>
+        </div>
+        <div data-lang-block="hu">
+          <p>A projektmunkák fix árkereteként árazódnak, kifejezetten arra a helyzetre írva, amit a Diagnosztikán együtt feltérképeztünk. Nincsenek csomag-szintek, nincsenek összehasonlító táblázatok.</p>
+          <p>A retainerek <em>kizárólag meghívás alapján</em> elérhetők, az ajánlat személyre szabott. Soha nem ajánlom a Diagnosztika napján, és soha nem ajánlom olyannak, akivel előtte ne dolgoztam volna meghatározott formában.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING / TIMETABLE -->
+<section class="section" id="book" data-screen-label="05 Pricing — Booking">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="hairline"></span>
+      <span class="label"><span data-lang="en">Booking</span><span data-lang="hu">Foglalás</span></span>
+      <h2 style="margin-top:24px;"><span data-lang="en">Mondays through Thursdays.<br/>Held two weeks in advance.</span><span data-lang="hu">Hétfőtől csütörtökig.<br/>Két hétre előre tartva.</span></h2>
+    </header>
+
+    <div class="reveal" style="border-top:1px solid var(--border); border-bottom:1px solid var(--border); display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 0;">
+      <div style="padding: 56px 48px 56px 0; border-right: 1px solid var(--border);">
+        <span class="label" style="display:block; margin-bottom:24px; color: var(--gold);">01</span>
+        <h3 class="serif" style="font-style:italic; font-size:24px; color:var(--white); margin-bottom:16px;"><span data-lang="en">Send a request</span><span data-lang="hu">Küldj kérést</span></h3>
+        <p style="font-size:14px;"><span data-lang="en">Use the form below or write directly. Tell me the situation in two paragraphs — I read everything that comes in.</span><span data-lang="hu">Használd az űrlapot lent, vagy írj közvetlenül. Két bekezdésben mondd el a helyzetet — mindent elolvasok.</span></p>
+      </div>
+      <div style="padding: 56px 48px; border-right: 1px solid var(--border);">
+        <span class="label" style="display:block; margin-bottom:24px; color: var(--gold);">02</span>
+        <h3 class="serif" style="font-style:italic; font-size:24px; color:var(--white); margin-bottom:16px;"><span data-lang="en">Confirm a slot</span><span data-lang="hu">Megerősítés</span></h3>
+        <p style="font-size:14px;"><span data-lang="en">Within 48 hours I send three slot options and an invoice. The booking is held when the invoice is paid.</span><span data-lang="hu">48 órán belül küldök három időpontlehetőséget és egy számlát. A foglalást a számla kifizetése rögzíti.</span></p>
+      </div>
+      <div style="padding: 56px 0 56px 48px;">
+        <span class="label" style="display:block; margin-bottom:24px; color: var(--gold);">03</span>
+        <h3 class="serif" style="font-style:italic; font-size:24px; color:var(--white); margin-bottom:16px;"><span data-lang="en">We meet</span><span data-lang="hu">Találkozunk</span></h3>
+        <p style="font-size:14px;"><span data-lang="en">Video call, on the day. Written frame within 72 hours after.</span><span data-lang="hu">Videohívás a megbeszélt napon. Írásos keret 72 órán belül.</span></p>
+      </div>
+    </div>
+
+    <!-- Booking form -->
+    <form class="reveal" style="margin-top: 96px; display:grid; grid-template-columns: 1fr 1fr; gap: 32px 56px;" onsubmit="event.preventDefault(); this.querySelector('[data-confirm]').classList.add('is-on');">
+      <label style="display:flex; flex-direction:column; gap:10px;">
+        <span class="label" style="color: var(--muted);"><span data-lang="en">Name</span><span data-lang="hu">Név</span></span>
+        <input type="text" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
+      </label>
+      <label style="display:flex; flex-direction:column; gap:10px;">
+        <span class="label" style="color: var(--muted);"><span data-lang="en">Email</span><span data-lang="hu">Email</span></span>
+        <input type="email" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
+      </label>
+      <label style="display:flex; flex-direction:column; gap:10px;">
+        <span class="label" style="color: var(--muted);"><span data-lang="en">Role / Practice</span><span data-lang="hu">Szerep / Praxis</span></span>
+        <input type="text" placeholder="" style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
+      </label>
+      <label style="display:flex; flex-direction:column; gap:10px;">
+        <span class="label" style="color: var(--muted);"><span data-lang="en">Preferred Language</span><span data-lang="hu">Preferált nyelv</span></span>
+        <select style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none; appearance:none;">
+          <option style="background:var(--charcoal)">English</option>
+          <option style="background:var(--charcoal)">Magyar</option>
+        </select>
+      </label>
+      <label style="grid-column: 1 / -1; display:flex; flex-direction:column; gap:10px;">
+        <span class="label" style="color: var(--muted);"><span data-lang="en">The situation, in two paragraphs</span><span data-lang="hu">A helyzet két bekezdésben</span></span>
+        <textarea rows="6" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:17px; padding: 12px 0; outline:none; resize:vertical; line-height:1.6;"></textarea>
+      </label>
+      <div style="grid-column: 1 / -1; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; margin-top: 16px;">
+        <span class="note-italic" data-confirm><span data-lang="en">Sent. I'll come back within 48 hours.</span><span data-lang="hu">Elküldve. 48 órán belül jelentkezem.</span></span>
+        <button type="submit" class="cta" style="background:transparent; border:0; cursor:pointer; padding-bottom:6px;">
+          <span data-lang="en">Send Request</span><span data-lang="hu">Kérés küldése</span><span class="cta__arrow">→</span>
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<style>
+  [data-confirm] { opacity: 0; transition: opacity 400ms ease; }
+  [data-confirm].is-on { opacity: 1; }
+  input:focus, textarea:focus, select:focus { border-bottom-color: var(--gold) !important; }
+  @media (max-width: 880px) {
+    section[id="book"] form { grid-template-columns: 1fr !important; }
+    section[id="book"] [style*="grid-template-columns: 1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    section[id="book"] [style*="grid-template-columns: 1fr 1fr 1fr"] > div { padding: 40px 0 !important; border-right: 0 !important; border-bottom: 1px solid var(--border) !important; }
+    section[id="book"] [style*="grid-template-columns: 1fr 1fr 1fr"] > div:last-child { border-bottom: 0 !important; }
+  }
+</style>
+
+<!-- FAQ -->
+<section class="section surface" data-screen-label="06 Pricing — FAQ">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="hairline"></span>
+      <span class="label"><span data-lang="en">Plain Answers</span><span data-lang="hu">Egyenes Válaszok</span></span>
+      <h2 style="margin-top:24px;"><span data-lang="en">Asked often.<br/>Answered the same way.</span><span data-lang="hu">Gyakori kérdések.<br/>Mindig ugyanaz a válasz.</span></h2>
+    </header>
+
+    <div class="reveal" style="border-top: 1px solid var(--border);">
+      <details style="border-bottom:1px solid var(--border); padding: 28px 0;">
+        <summary class="serif" style="font-size:22px; color:var(--heading); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;"><span><span data-lang="en">Can the fee be invoiced to a company?</span><span data-lang="hu">Számlázható céges névre?</span></span><span style="color:var(--gold); font-style:italic; font-size: 15px;">+</span></summary>
+        <p style="margin-top:18px; max-width: 64ch;"><span data-lang="en">Yes. Hungarian VAT (ÁFA) applies where required. EU reverse-charge for B2B clients with a valid VAT ID.</span><span data-lang="hu">Igen. ÁFA hatálya alá tartozik, ahol szükséges. EU-s B2B ügyfeleknek érvényes adószámmal fordított adózás.</span></p>
+      </details>
+      <details style="border-bottom:1px solid var(--border); padding: 28px 0;">
+        <summary class="serif" style="font-size:22px; color:var(--heading); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;"><span><span data-lang="en">Do you offer a free intro call?</span><span data-lang="hu">Van ingyenes ismerkedő hívás?</span></span><span style="color:var(--gold); font-style:italic; font-size: 15px;">+</span></summary>
+        <p style="margin-top:18px; max-width: 64ch;"><span data-lang="en">No. The Diagnostic is the first conversation. That's deliberate — it removes the sales theatre and lets us do real work the first time we meet.</span><span data-lang="hu">Nem. A Diagnosztika az első beszélgetés. Ez tudatos — kihagyja az értékesítési színházat, és valódi munkát tesz lehetővé az első alkalommal.</span></p>
+      </details>
+      <details style="border-bottom:1px solid var(--border); padding: 28px 0;">
+        <summary class="serif" style="font-size:22px; color:var(--heading); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;"><span><span data-lang="en">What if it isn't a fit after the Diagnostic?</span><span data-lang="hu">Mi van, ha a Diagnosztika után nem illeszkedünk?</span></span><span style="color:var(--gold); font-style:italic; font-size: 15px;">+</span></summary>
+        <p style="margin-top:18px; max-width: 64ch;"><span data-lang="en">That's a normal outcome — and the design of the practice. The Diagnostic stands on its own. You leave with the frame regardless.</span><span data-lang="hu">Ez normális kimenetel — és a praxis felépítésének része. A Diagnosztika önállóan áll meg. A kerettel mindenképp távozol.</span></p>
+      </details>
+      <details style="padding: 28px 0;">
+        <summary class="serif" style="font-size:22px; color:var(--heading); cursor:pointer; list-style:none; display:flex; justify-content:space-between; align-items:center;"><span><span data-lang="en">Cancellations and rescheduling?</span><span data-lang="hu">Lemondás és átütemezés?</span></span><span style="color:var(--gold); font-style:italic; font-size: 15px;">+</span></summary>
+        <p style="margin-top:18px; max-width: 64ch;"><span data-lang="en">Reschedule freely up to 48 hours before the slot. Inside 48 hours, the slot is forfeit — the time is held for you and isn't easy to fill.</span><span data-lang="hu">Az alkalom előtt 48 óráig szabadon átütemezhető. 48 órán belül a foglalás elvész — az időt fenntartottam, és nehéz pótolni.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__row">
+      <div class="footer__col">
+        <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
+        <p class="footer__tag"><span data-lang="en">A private advisory practice.<br/>Budapest.</span><span data-lang="hu">Privát tanácsadói praxis.<br/>Budapest.</span></p>
+      </div>
+      <div class="footer__col"><h4><span data-lang="en">Practice</span><span data-lang="hu">Praxis</span></h4><ul>
+        <li><a href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a></li>
+        <li><a href="pricing.html"><span data-lang="en">Pricing &amp; Booking</span><span data-lang="hu">Árak &amp; Foglalás</span></a></li>
+        <li><a href="writing.html"><span data-lang="en">Writing</span><span data-lang="hu">Írások</span></a></li>
+        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a></li>
+      </ul></div>
+      <div class="footer__col"><h4><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></h4><ul>
+        <li><a href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a></li>
+        <li><a href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a></li>
+        <li><a href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a></li>
+        <li><a href="workshop.html"><span data-lang="en">Workshop</span><span data-lang="hu">Műhely</span></a></li>
+      </ul></div>
+      <div class="footer__col"><h4><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></h4><ul>
+        <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></a></li>
+        <li><a href="imprint.html"><span data-lang="en">Imprint</span><span data-lang="hu">Impresszum</span></a></li>
+      </ul></div>
+    </div>
+    <div class="footer__legal">
+      <span>© 2026 Ádám Drágus.</span>
+      <span class="note-italic"><span data-lang="en">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span><span data-lang="hu">Decision Design — azoknak a pillanatoknak a tervezése, amelyek eldöntik, hogy a munkád életben marad-e.</span></span>
+    </div>
+  </div>
+</footer>
+
+<div class="page-marker"><span class="num">07</span><span data-lang="en">Pricing &amp; Booking</span><span data-lang="hu">Árak &amp; Foglalás</span></div>
+</main>
+</body>
+</html>
