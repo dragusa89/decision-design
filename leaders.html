@@ -6,50 +6,51 @@
 <title>For Design Leaders — Decision Design</title>
 <link rel="stylesheet" href="styles.css" />
 <script src="site.js" defer></script>
+<script src="hero-canvas.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
   <nav class="nav__links">
-    <a class="nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="nav__link is-active" href="leaders.html"><span data-lang="en">For Leaders</span><span data-lang="hu">Vezetőknek</span></a>
-    <a class="nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span>
-  </nav>
+    <a class="nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="nav__link" href="freelancers.html">For Freelancers</a>
+    <a class="nav__link" href="agencies.html">For Agencies</a>
+    <a class="nav__link is-active" href="leaders.html">For Leaders</a>
+    <a class="nav__link" href="about.html">About</a>
+    </nav>
   <button class="nav__menu-toggle">Menu</button>
 </header>
 
 <aside class="mobile-nav">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
   <div class="mobile-nav__links">
-    <a class="mobile-nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="mobile-nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <a class="mobile-nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="mobile-nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="mobile-nav__link" href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a>
+    <a class="mobile-nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link" href="freelancers.html">For Freelancers</a>
+    <a class="mobile-nav__link" href="agencies.html">For Agencies</a>
+    <a class="mobile-nav__link" href="leaders.html">For Design Leaders</a>
   </div>
-  <div class="mobile-nav__lang"><span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span></div>
+  
 </aside>
 
 <main>
-<section class="hero container" data-screen-label="01 Leaders — Hero">
-  <div class="reveal"><span class="eyebrow hero__eyebrow"><span data-lang="en">For Corporate Design Leaders</span><span data-lang="hu">Vállalati Designvezetőknek</span></span></div>
-  <h1 class="reveal" style="--reveal-delay:120ms">
-    <span data-lang="en">You're present<br/>in the room.<br/><em>You're absent<br/>from the decision.</em></span>
-    <span data-lang="hu">Jelen vagy<br/>a teremben.<br/><em>Hiányzol<br/>a döntésből.</em></span>
+<section class="hero hero--with-canvas container" data-screen-label="01 Leaders — Hero">
+  <canvas class="hero-canvas" data-density="0.7" data-intensity="0.7" aria-hidden="true"></canvas>
+  <div class="reveal"><span class="eyebrow hero__eyebrow">For Corporate Design Leaders</span></div>
+  <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 500">
+    You're present<br/>in the room.<br/><em>You're absent<br/>from the decision.</em>
+    
   </h1>
   <p class="hero__lede reveal" style="--reveal-delay:260ms">
-    <span data-lang="en">You have the title. You have the seat. But the decisions that determine design's authority — budget, scope, organizational voice — happen in conversations where design isn't invited.</span>
-    <span data-lang="hu">Megvan a cím. Megvan a hely az asztalnál. De a döntések, amelyek a design tekintélyét meghatározzák — büdzsé, scope, szervezeti hang — olyan beszélgetésekben születnek, ahová a designt nem hívják.</span>
+    You have the title. You have the seat. But the decisions that determine design's authority — budget, scope, organizational voice — happen in conversations where design isn't invited.
+    
   </p>
 
   <aside class="hero__meta" aria-hidden="true">
     <span class="hero__meta-line is-gold">№ 06 — Audience</span>
-    <span class="hero__meta-line"><span data-lang="en">Track</span><span data-lang="hu">Pálya</span> <span class="num">Corporate</span></span>
-    <span class="hero__meta-line"><span data-lang="en">Format</span><span data-lang="hu">Formátum</span> <span class="num">Team · 1:1</span></span>
+    <span class="hero__meta-line">Track <span class="num">Corporate</span></span>
+    <span class="hero__meta-line">Format <span class="num">Team · 1:1</span></span>
   </aside>
 </section>
 
@@ -60,20 +61,15 @@
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label"><span data-lang="en">The Organizational Dynamic</span><span data-lang="hu">A Szervezeti Dinamika</span></span>
-        <h2><span data-lang="en">The decision happens<br/><em>before the meeting.</em></span><span data-lang="hu">A döntés még<br/><em>a meeting előtt</em><br/>megtörténik.</span></h2>
+        <span class="label">The Organizational Dynamic</span>
+        <h2>The decision happens<br/><em>before the meeting.</em></h2>
       </div>
       <div class="split__body prose reveal" style="--reveal-delay:160ms">
-        <div data-lang-block="en">
+        
           <p>Corporate design leaders face a specific version of the problem: the decision happens before the meeting.</p>
           <p>By the time you're presenting your team's work to the executive layer, someone has already framed the conversation — usually in terms that don't include design authority.</p>
           <p>The solution isn't better presentation skills.<br/>The solution is being part of the decision architecture <em>before the meeting is scheduled.</em></p>
-        </div>
-        <div data-lang-block="hu">
-          <p>A vállalati designvezetők a probléma sajátos változatával szembesülnek: a döntés a meeting előtt megszületik.</p>
-          <p>Mire a csapatod munkáját bemutatod a vezetői rétegnek, valaki már keretbe foglalta a beszélgetést — általában olyan keretbe, ami nem tartalmazza a design tekintélyét.</p>
-          <p>A megoldás nem jobb prezentációs készség.<br/>A megoldás az, hogy a döntésarchitektúra része legyél, <em>mielőtt a meetinget kitűzik.</em></p>
-        </div>
+
       </div>
     </div>
   </div>
@@ -83,51 +79,51 @@
   <div class="container">
     <header class="section__head reveal">
       <span class="hairline"></span>
-      <span class="label"><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></span>
-      <h2 style="margin-top:24px;"><span data-lang="en">Three forms.<br/>Built for the way<br/>organizations actually decide.</span><span data-lang="hu">Három forma.<br/>A szervezetek valódi<br/>döntési módjához szabva.</span></h2>
+      <span class="label">Engagements</span>
+      <h2 style="margin-top:24px;">Three forms.<br/>Built for the way<br/>organizations actually decide.</h2>
     </header>
 
     <div class="services reveal">
       <article class="service">
         <span class="service__num">01</span>
         <div class="service__body">
-          <h3><span data-lang="en">Corporate Workshop</span><span data-lang="hu">Vállalati Műhely</span></h3>
-          <p><span data-lang="en">Half-day session (3.5 hours) for a design team or leadership group. In-person or remote. Funded by training budget. Teaches Decision Design principles. The workshop is also the diagnostic — by the end, the real problem is visible.</span><span data-lang="hu">Féltagos alkalom (3,5 óra) egy designcsapat vagy vezetői csoport számára. Személyesen vagy online. Képzési büdzséből finanszírozható. A Decision Design elveit tanítja. A műhely egyben diagnosztika is — a végére láthatóvá válik a valódi probléma.</span></p>
+          <h3>Corporate Workshop</h3>
+          <p>Half-day session (3.5 hours) for a design team or leadership group. In-person or remote. Funded by training budget. Teaches Decision Design principles. The workshop is also the diagnostic — by the end, the real problem is visible.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">Fixed day rate</span><span data-lang="hu">Fix napidíj</span></span>
-          <span class="invitation"><span data-lang="en">Half-day · 3.5 hrs</span><span data-lang="hu">Féltagos · 3,5 óra</span></span>
+          <span class="price">Fixed day rate</span>
+          <span class="invitation">Half-day · 3.5 hrs</span>
         </div>
       </article>
 
       <article class="service">
         <span class="service__num">02</span>
         <div class="service__body">
-          <h3><span data-lang="en">Design Leadership Advisory</span><span data-lang="hu">Designvezetői Tanácsadás</span></h3>
-          <p><span data-lang="en">Ongoing support for a specific initiative: a product redesign, a team restructuring, an executive presentation campaign. Advising the design leader through the decision moments.</span><span data-lang="hu">Folyamatos támogatás egy konkrét kezdeményezéshez: termék-újratervezés, csapat-átstrukturálás, vezetői prezentációs kampány. A designvezető tanácsadása a döntési pillanatokon át.</span></p>
+          <h3>Design Leadership Advisory</h3>
+          <p>Ongoing support for a specific initiative: a product redesign, a team restructuring, an executive presentation campaign. Advising the design leader through the decision moments.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">Fixed range</span><span data-lang="hu">Fix árkeret</span></span>
-          <span class="invitation"><span data-lang="en">Per initiative</span><span data-lang="hu">Kezdeményezésenként</span></span>
+          <span class="price">Fixed range</span>
+          <span class="invitation">Per initiative</span>
         </div>
       </article>
 
       <article class="service">
         <span class="service__num">03</span>
         <div class="service__body">
-          <h3><span data-lang="en">Strategic Retainer</span><span data-lang="hu">Stratégiai Retainer</span></h3>
-          <p><span data-lang="en">Available as a thinking partner to the design leader or C-suite. Embedded support for ongoing decisions, org design, budget conversations, executive positioning.</span><span data-lang="hu">Gondolkodási partner a designvezető vagy a felsővezetés mellett. Beágyazott támogatás folyamatos döntésekhez, szervezeti tervezéshez, büdzsé-beszélgetésekhez, vezetői pozícionáláshoz.</span></p>
+          <h3>Strategic Retainer</h3>
+          <p>Available as a thinking partner to the design leader or C-suite. Embedded support for ongoing decisions, org design, budget conversations, executive positioning.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">By invitation</span><span data-lang="hu">Meghívás alapján</span></span>
-          <span class="invitation"><span data-lang="en">Personalized proposal</span><span data-lang="hu">Személyre szabott ajánlat</span></span>
+          <span class="price">By invitation</span>
+          <span class="invitation">Personalized proposal</span>
         </div>
       </article>
     </div>
 
     <p class="note-italic" style="margin-top: 56px; font-size: 15px; max-width: 56ch;">
-      <span data-lang="en">Corporate workshops are typically booked Q3–Q4 for Q1–Q2 delivery, when training budgets are being allocated. If you're planning for next year, now is the right time to have the conversation.</span>
-      <span data-lang="hu">A vállalati műhelyeket jellemzően Q3–Q4-ben foglalják Q1–Q2-es teljesítésre, amikor a képzési büdzséket elosztják. Ha jövőre tervezel, most van itt az ideje a beszélgetésnek.</span>
+      Corporate workshops are typically booked Q3–Q4 for Q1–Q2 delivery, when training budgets are being allocated. If you're planning for next year, now is the right time to have the conversation.
+      
     </p>
   </div>
 </section>
@@ -135,8 +131,8 @@
 <section class="closing-cta" data-screen-label="04 Leaders — CTA">
   <div class="container reveal">
     <span class="hairline"></span>
-    <h2><span data-lang="en">Ready to be part of<br/><em>the decision architecture?</em></span><span data-lang="hu">Készen állsz, hogy része legyél<br/><em>a döntésarchitektúrának?</em></span></h2>
-    <a class="cta" href="diagnostic.html"><span data-lang="en">Start with a Diagnostic</span><span data-lang="hu">Kezdjük egy Diagnosztikával</span><span class="cta__arrow">→</span></a>
+    <h2>Ready to be part of<br/><em>the decision architecture?</em></h2>
+    <a class="cta" href="book.html">Start with a Diagnostic<span class="cta__arrow">→</span></a>
   </div>
 </section>
 
@@ -145,29 +141,30 @@
     <div class="footer__row">
       <div class="footer__col">
         <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
-        <p class="footer__tag"><span data-lang="en">A private advisory practice.<br/>Budapest.</span><span data-lang="hu">Privát tanácsadói praxis.<br/>Budapest.</span></p>
+        <p class="footer__tag">A private advisory practice.<br/>Budapest.</p>
       </div>
-      <div class="footer__col"><h4><span data-lang="en">Practice</span><span data-lang="hu">Praxis</span></h4><ul>
-        <li><a href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a></li>
-        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a></li>
+      <div class="footer__col"><h4>Practice</h4><ul>
+        <li><a href="diagnostic.html">The Diagnostic</a></li>
+        <li><a href="book.html">Book a Diagnostic</a></li>
+        <li><a href="about.html">About</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></h4><ul>
-        <li><a href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a></li>
-        <li><a href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a></li>
-        <li><a href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a></li>
+      <div class="footer__col"><h4>Engagements</h4><ul>
+        <li><a href="freelancers.html">For Freelancers</a></li>
+        <li><a href="agencies.html">For Agencies</a></li>
+        <li><a href="leaders.html">For Design Leaders</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></h4><ul>
+      <div class="footer__col"><h4>Contact</h4><ul>
         <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
       </ul></div>
     </div>
     <div class="footer__legal">
       <span>© 2026 Ádám Drágus.</span>
-      <span class="note-italic"><span data-lang="en">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span><span data-lang="hu">Decision Design — azoknak a pillanatoknak a tervezése, amelyek eldöntik, hogy a munkád életben marad-e.</span></span>
+      <span class="note-italic">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span>
     </div>
   </div>
 </footer>
 
-<div class="page-marker"><span class="num">06</span><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></div>
+<div class="page-marker"><span class="num">06</span>For Design Leaders</div>
 </main>
 </body>
 </html>

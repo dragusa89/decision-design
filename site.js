@@ -1,26 +1,6 @@
-// Decision Design — language toggle + scroll reveal + mobile nav
+// Decision Design — scroll reveal + mobile nav
 
 (function () {
-  const STORAGE_KEY = 'dd-lang';
-
-  function setLang(lang) {
-    if (lang !== 'en' && lang !== 'hu') lang = 'en';
-    document.documentElement.lang = lang;
-    try { localStorage.setItem(STORAGE_KEY, lang); } catch (e) {}
-    document.querySelectorAll('.nav__lang button, .mobile-nav__lang button').forEach(b => {
-      b.classList.toggle('is-active', b.dataset.set === lang);
-    });
-  }
-
-  function initLang() {
-    let stored;
-    try { stored = localStorage.getItem(STORAGE_KEY); } catch (e) {}
-    setLang(stored || document.documentElement.lang || 'en');
-    document.querySelectorAll('.nav__lang button, .mobile-nav__lang button').forEach(b => {
-      b.addEventListener('click', () => setLang(b.dataset.set));
-    });
-  }
-
   function initReveal() {
     const els = document.querySelectorAll('.reveal');
     // Progressive enhancement: content is visible by default. We only add the
@@ -64,7 +44,6 @@
   }
 
   document.addEventListener('DOMContentLoaded', () => {
-    initLang();
     initReveal();
     initMobileNav();
   });

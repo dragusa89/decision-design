@@ -6,50 +6,51 @@
 <title>For Freelancers — Decision Design</title>
 <link rel="stylesheet" href="styles.css" />
 <script src="site.js" defer></script>
+<script src="hero-canvas.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
   <nav class="nav__links">
-    <a class="nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="nav__link is-active" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="nav__link" href="leaders.html"><span data-lang="en">For Leaders</span><span data-lang="hu">Vezetőknek</span></a>
-    <a class="nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span>
-  </nav>
+    <a class="nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="nav__link is-active" href="freelancers.html">For Freelancers</a>
+    <a class="nav__link" href="agencies.html">For Agencies</a>
+    <a class="nav__link" href="leaders.html">For Leaders</a>
+    <a class="nav__link" href="about.html">About</a>
+    </nav>
   <button class="nav__menu-toggle">Menu</button>
 </header>
 
 <aside class="mobile-nav">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
   <div class="mobile-nav__links">
-    <a class="mobile-nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="mobile-nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <a class="mobile-nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="mobile-nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="mobile-nav__link" href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a>
+    <a class="mobile-nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link" href="freelancers.html">For Freelancers</a>
+    <a class="mobile-nav__link" href="agencies.html">For Agencies</a>
+    <a class="mobile-nav__link" href="leaders.html">For Design Leaders</a>
   </div>
-  <div class="mobile-nav__lang"><span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span></div>
+  
 </aside>
 
 <main>
-<section class="hero container" data-screen-label="01 Freelancers — Hero">
-  <div class="reveal"><span class="eyebrow hero__eyebrow"><span data-lang="en">For Senior Freelancers</span><span data-lang="hu">Tapasztalt Szabadúszóknak</span></span></div>
-  <h1 class="reveal" style="--reveal-delay:120ms">
-    <span data-lang="en" style="font-size:64px;line-height:1;letter-spacing:1px">You're not losing<br/>on quality. You're losing<br/><em>before you even<br/>get to show it.</em></span>
-    <span data-lang="hu">Nem a minőségen veszítesz.<br/>Veszítesz, <em>mielőtt egyáltalán<br/>megmutathatnád.</em></span>
+<section class="hero hero--with-canvas container" data-screen-label="01 Freelancers — Hero">
+  <canvas class="hero-canvas" data-density="0.7" data-intensity="0.7" aria-hidden="true"></canvas>
+  <div class="reveal"><span class="eyebrow hero__eyebrow">For Senior Freelancers</span></div>
+  <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 500">
+    You're not losing<br/>on quality. You're losing<br/><em>before you even<br/>get to show it.</em>
+    
   </h1>
   <p class="hero__lede reveal" style="--reveal-delay:260ms">
-    <span data-lang="en">Every time you justify your price, you've already lost the frame. You're competing on deliverables when you should be competing on positioning.</span>
-    <span data-lang="hu">Minden alkalommal, amikor magyarázod az áradat, már elvesztetted a keretet. Végtermékek mentén versenyezel, miközben pozícionálás mentén kellene.</span>
+    Every time you justify your price, you've already lost the frame. You're competing on deliverables when you should be competing on positioning.
+    
   </p>
 
   <aside class="hero__meta" aria-hidden="true">
     <span class="hero__meta-line is-gold">№ 04 — Audience</span>
-    <span class="hero__meta-line"><span data-lang="en">Track</span><span data-lang="hu">Pálya</span> <span class="num">Solo</span></span>
-    <span class="hero__meta-line"><span data-lang="en">Engagement</span><span data-lang="hu">Forma</span> <span class="num">1:1</span></span>
+    <span class="hero__meta-line">Track <span class="num">Solo</span></span>
+    <span class="hero__meta-line">Engagement <span class="num">1:1</span></span>
   </aside>
 </section>
 
@@ -60,20 +61,15 @@
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label"><span data-lang="en">Where Control Breaks Down</span><span data-lang="hu">Ahol Az Irányítás Megtörik</span></span>
-        <h2><span data-lang="en">The moment before<br/>the number<br/>is everything.</span><span data-lang="hu">A szám előtti pillanat<br/>mindent eldönt.</span></h2>
+        <span class="label">Where Control Breaks Down</span>
+        <h2>The moment before<br/>the number<br/>is everything.</h2>
       </div>
       <div class="split__body prose reveal" style="--reveal-delay:160ms">
-        <div data-lang-block="en">
+        
           <p>There's one moment that determines everything in a freelance client relationship: the moment they ask <em>what this is going to cost.</em></p>
           <p>Everything before that moment — the way you framed the conversation, the assumptions they arrived with, the authority they gave you — determines whether you have to defend the number or whether it's already obvious.</p>
           <p>Most freelancers manage the number.<br/><em>Decision Design manages the moment before the number.</em></p>
-        </div>
-        <div data-lang-block="hu">
-          <p>Egy pillanat dönt el mindent a szabadúszó-ügyfél kapcsolatban: amikor megkérdezik, <em>mennyibe kerül.</em></p>
-          <p>Minden, ami előtte történt — ahogy keretbe foglaltad a beszélgetést, a feltételezések, amikkel érkeztek, a tekintély, amit átadtak neked — eldönti, hogy védened kell a számot, vagy már magától értetődő.</p>
-          <p>A legtöbb szabadúszó a számot menedzseli.<br/><em>A Decision Design a szám előtti pillanatot.</em></p>
-        </div>
+
       </div>
     </div>
   </div>
@@ -84,68 +80,84 @@
   <div class="container">
     <header class="section__head reveal">
       <span class="hairline"></span>
-      <span class="label"><span data-lang="en">How We Work Together</span><span data-lang="hu">Hogyan Dolgozunk Együtt</span></span>
-      <h2 style="margin-top:24px;"><span data-lang="en">Four engagements.<br/>One progression.</span><span data-lang="hu">Négy forma.<br/>Egy ív.</span></h2>
+      <span class="label">How We Work Together</span>
+      <h2 style="margin-top:24px;">Four engagements.<br/>One progression.</h2>
     </header>
 
     <div class="services reveal">
       <article class="service">
         <span class="service__num">01</span>
         <div class="service__body">
-          <h3><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></h3>
-          <p><span data-lang="en">60–90 min. Map your specific decision problem. Where are you losing control? What frame is being set before you arrive?</span><span data-lang="hu">60–90 perc. Feltérképezzük a saját döntési problémádat. Hol veszíted az irányítást? Milyen keret formálódik, mielőtt megérkeznél?</span></p>
-          <a class="cta cta--small service__cta" href="diagnostic.html"><span data-lang="en">Begin Here</span><span data-lang="hu">Itt Kezdődik</span><span class="cta__arrow">→</span></a>
+          <h3>The Diagnostic</h3>
+          <p>60–90 min. Map your specific decision problem. Where are you losing control? What frame is being set before you arrive?</p>
+          <a class="cta cta--small service__cta" href="diagnostic.html">Begin Here<span class="cta__arrow">→</span></a>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">Fixed price</span><span data-lang="hu">Fix ár</span></span>
-          <span class="invitation"><span data-lang="en">Single session</span><span data-lang="hu">Egyetlen alkalom</span></span>
+          <span class="price">Fixed price</span>
+          <span class="invitation">Single session</span>
         </div>
       </article>
 
       <article class="service">
         <span class="service__num">02</span>
         <div class="service__body">
-          <h3><span data-lang="en">Ongoing Consultation</span><span data-lang="hu">Folyamatos Konzultáció</span></h3>
-          <p><span data-lang="en">A defined number of sessions, used as needed during active work. You own the timing. I own the limit.</span><span data-lang="hu">Meghatározott számú alkalom, szükség szerint használva aktív munka közben. Az időzítés a tiéd. A keret az enyém.</span></p>
+          <h3>Ongoing Consultation</h3>
+          <p>A defined number of sessions, used as needed during active work. You own the timing. I own the limit.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">Fixed price</span><span data-lang="hu">Fix ár</span></span>
-          <span class="invitation"><span data-lang="en">Defined sessions</span><span data-lang="hu">Meghatározott alkalmak</span></span>
+          <span class="price">Fixed price</span>
+          <span class="invitation">Defined sessions</span>
         </div>
       </article>
 
       <article class="service">
         <span class="service__num">03</span>
         <div class="service__body">
-          <h3><span data-lang="en">Retainer</span><span data-lang="hu">Retainer</span></h3>
-          <p><span data-lang="en">Available as your coach in the ring — not just a trainer who teaches technique once. When you're under pressure in a real negotiation, you revert. The retainer is about having someone in your corner when it matters.</span><span data-lang="hu">Edződ a ringben — nem egy tréner, aki egyszer megmutatja a technikát. Egy valódi tárgyalás nyomása alatt visszaesel. A retainer arról szól, hogy a sarkadban legyen valaki, amikor számít.</span></p>
+          <h3>Retainer</h3>
+          <p>Available as your coach in the ring — not just a trainer who teaches technique once. When you're under pressure in a real negotiation, you revert. The retainer is about having someone in your corner when it matters.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">By invitation</span><span data-lang="hu">Meghívás alapján</span></span>
-          <span class="invitation"><span data-lang="en">Personalized proposal</span><span data-lang="hu">Személyre szabott ajánlat</span></span>
+          <span class="price">By invitation</span>
+          <span class="invitation">Personalized proposal</span>
         </div>
       </article>
 
       <article class="service">
         <span class="service__num">04</span>
         <div class="service__body">
-          <h3><span data-lang="en">Workshop</span><span data-lang="hu">Műhely</span></h3>
-          <p><span data-lang="en">A 4-hour group session for 8–12 senior freelancers. Teaches the framework. The workshop qualifies — packages are offered only to those who are clearly ready.</span><span data-lang="hu">4 órás csoportos alkalom 8–12 tapasztalt szabadúszónak. A keretrendszert tanítja. A műhely egyben szűrő — csomagokat csak azoknak ajánlunk, akik egyértelműen készen állnak.</span></p>
+          <h3>Workshop</h3>
+          <p>A 4-hour group session for 8–12 senior freelancers. Teaches the framework. The workshop qualifies — packages are offered only to those who are clearly ready.</p>
         </div>
         <div class="service__meta">
-          <span class="price"><span data-lang="en">Fixed price</span><span data-lang="hu">Fix ár</span></span>
-          <span class="invitation"><span data-lang="en">8–12 participants</span><span data-lang="hu">8–12 résztvevő</span></span>
+          <span class="price">Fixed price</span>
+          <span class="invitation">8–12 participants</span>
         </div>
       </article>
     </div>
   </div>
 </section>
 
-<section class="closing-cta" data-screen-label="04 Freelancers — CTA">
+<section class="section" data-screen-label="04 Freelancers — Testimonial">
+  <div class="container">
+    <figure class="reveal" style="display:flex; gap:40px; align-items:flex-start; flex-wrap:wrap; border-top:1px solid var(--border); padding-top:64px;">
+      <img src="assets/agota-portrait.png" alt="Ágota" style="width:72px; height:72px; border-radius:50%; object-fit:cover; filter:grayscale(0.2); border:1px solid var(--border); flex-shrink:0;" />
+      <blockquote style="flex:1; min-width:260px;">
+        <p style="font-family:var(--serif); font-style:italic; font-weight:500; font-size:clamp(22px,2.8vw,32px); line-height:1.25; color:var(--white); margin-bottom:24px;">
+          "Thanks Ádám — I'm really grateful. The call helped a lot."
+        </p>
+        <cite style="display:block; font-family:var(--sans); font-size:11px; letter-spacing:0.18em; text-transform:uppercase; color:var(--muted); font-style:normal;">
+          Ágota · Freelance Designer
+        </cite>
+      </blockquote>
+    </figure>
+  </div>
+</section>
+
+<section class="closing-cta" data-screen-label="05 Freelancers — CTA">
   <div class="container reveal">
     <span class="hairline"></span>
-    <h2><span data-lang="en">Ready to stop<br/><em>justifying your price?</em></span><span data-lang="hu">Készen állsz, hogy abbahagyd<br/><em>az árad magyarázatát?</em></span></h2>
-    <a class="cta" href="diagnostic.html"><span data-lang="en">Start with a Diagnostic</span><span data-lang="hu">Kezdjük egy Diagnosztikával</span><span class="cta__arrow">→</span></a>
+    <h2>Ready to stop<br/><em>justifying your price?</em></h2>
+    <a class="cta" href="book.html">Start with a Diagnostic<span class="cta__arrow">→</span></a>
   </div>
 </section>
 
@@ -154,29 +166,30 @@
     <div class="footer__row">
       <div class="footer__col">
         <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
-        <p class="footer__tag"><span data-lang="en">A private advisory practice.<br/>Budapest.</span><span data-lang="hu">Privát tanácsadói praxis.<br/>Budapest.</span></p>
+        <p class="footer__tag">A private advisory practice.<br/>Budapest.</p>
       </div>
-      <div class="footer__col"><h4><span data-lang="en">Practice</span><span data-lang="hu">Praxis</span></h4><ul>
-        <li><a href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a></li>
-        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a></li>
+      <div class="footer__col"><h4>Practice</h4><ul>
+        <li><a href="diagnostic.html">The Diagnostic</a></li>
+        <li><a href="book.html">Book a Diagnostic</a></li>
+        <li><a href="about.html">About</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></h4><ul>
-        <li><a href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a></li>
-        <li><a href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a></li>
-        <li><a href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a></li>
+      <div class="footer__col"><h4>Engagements</h4><ul>
+        <li><a href="freelancers.html">For Freelancers</a></li>
+        <li><a href="agencies.html">For Agencies</a></li>
+        <li><a href="leaders.html">For Design Leaders</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></h4><ul>
+      <div class="footer__col"><h4>Contact</h4><ul>
         <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
       </ul></div>
     </div>
     <div class="footer__legal">
       <span>© 2026 Ádám Drágus.</span>
-      <span class="note-italic"><span data-lang="en">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span><span data-lang="hu">Decision Design — azoknak a pillanatoknak a tervezése, amelyek eldöntik, hogy a munkád életben marad-e.</span></span>
+      <span class="note-italic">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span>
     </div>
   </div>
 </footer>
 
-<div class="page-marker"><span class="num">04</span><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></div>
+<div class="page-marker"><span class="num">04</span>For Freelancers</div>
 </main>
 </body>
 </html>

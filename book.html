@@ -6,50 +6,51 @@
 <title>Book a Diagnostic — Decision Design</title>
 <link rel="stylesheet" href="styles.css" />
 <script src="site.js" defer></script>
+<script src="hero-canvas.js" defer></script>
 </head>
 <body>
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
   <nav class="nav__links">
-    <a class="nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="nav__link" href="leaders.html"><span data-lang="en">For Leaders</span><span data-lang="hu">Vezetőknek</span></a>
-    <a class="nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span>
-  </nav>
+    <a class="nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="nav__link" href="freelancers.html">For Freelancers</a>
+    <a class="nav__link" href="agencies.html">For Agencies</a>
+    <a class="nav__link" href="leaders.html">For Leaders</a>
+    <a class="nav__link" href="about.html">About</a>
+    </nav>
   <button class="nav__menu-toggle">Menu</button>
 </header>
 
 <aside class="mobile-nav">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
   <div class="mobile-nav__links">
-    <a class="mobile-nav__link" href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a>
-    <a class="mobile-nav__link" href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a>
-    <a class="mobile-nav__link" href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a>
-    <a class="mobile-nav__link" href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a>
-    <a class="mobile-nav__link" href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a>
+    <a class="mobile-nav__link" href="diagnostic.html">The Diagnostic</a>
+    <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link" href="freelancers.html">For Freelancers</a>
+    <a class="mobile-nav__link" href="agencies.html">For Agencies</a>
+    <a class="mobile-nav__link" href="leaders.html">For Design Leaders</a>
   </div>
-  <div class="mobile-nav__lang"><span class="nav__lang"><button data-set="en">EN</button><span class="sep">/</span><button data-set="hu">HU</button></span></div>
+  
 </aside>
 
 <main>
-<section class="hero container" data-screen-label="01 Book — Hero">
-  <div class="reveal"><span class="eyebrow hero__eyebrow"><span data-lang="en">Book a Diagnostic</span><span data-lang="hu">Időpont a Diagnosztikára</span></span></div>
-  <h1 class="reveal" style="--reveal-delay:120ms">
-    <span data-lang="en">A single session.<br/>Held in private.<br/><em>Booked in three steps.</em></span>
-    <span data-lang="hu">Egyetlen alkalom.<br/>Privát keretek között.<br/><em>Három lépésben foglalható.</em></span>
+<section class="hero hero--with-canvas container" data-screen-label="01 Book — Hero">
+  <canvas class="hero-canvas" data-density="0.6" data-intensity="0.6" aria-hidden="true"></canvas>
+  <div class="reveal"><span class="eyebrow hero__eyebrow">Book a Diagnostic</span></div>
+  <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 500">
+    A single session.<br/>Held in private.<br/><em>Booked in three steps.</em>
+    
   </h1>
   <p class="hero__lede reveal" style="--reveal-delay:260ms">
-    <span data-lang="en">Choose a window. Tell me, in two paragraphs, what's actually going on. Pay the fixed price. The session is confirmed when all three are complete — never before.</span>
-    <span data-lang="hu">Válassz időpontot. Két bekezdésben írd le, hogy valójában mi a helyzet. Fizesd ki a fix árat. A foglalkozás akkor erősített, ha mindhárom megvan — előbb soha.</span>
+    Choose a window. Tell me, in two paragraphs, what's actually going on. Pay the fixed price. The session is confirmed when all three are complete — never before.
+    
   </p>
 
   <aside class="hero__meta" aria-hidden="true">
     <span class="hero__meta-line is-gold">№ 08 — Booking</span>
-    <span class="hero__meta-line"><span data-lang="en">Length</span><span data-lang="hu">Hossz</span> <span class="num">60–90 min</span></span>
-    <span class="hero__meta-line"><span data-lang="en">Format</span><span data-lang="hu">Forma</span> <span class="num">Remote · Budapest</span></span>
+    <span class="hero__meta-line">Length <span class="num">60–90 min</span></span>
+    <span class="hero__meta-line">Format <span class="num">Remote · Budapest</span></span>
   </aside>
 </section>
 
@@ -60,36 +61,36 @@
   <div class="container">
     <header class="section__head reveal">
       <span class="hairline"></span>
-      <span class="label"><span data-lang="en">How It Works</span><span data-lang="hu">Hogyan Megy</span></span>
-      <h2 style="margin-top:24px;"><span data-lang="en">Three steps.<br/>No back-and-forth.</span><span data-lang="hu">Három lépés.<br/>Nincs ide-oda.</span></h2>
+      <span class="label">How It Works</span>
+      <h2 style="margin-top:24px;">Three steps.<br/>No back-and-forth.</h2>
     </header>
 
     <div class="services reveal">
       <article class="service">
         <span class="service__num">i.</span>
         <div class="service__body">
-          <h3><span data-lang="en">Choose a window</span><span data-lang="hu">Válassz időablakot</span></h3>
-          <p><span data-lang="en">Pick one of the open slots below. Sessions run Monday to Thursday, in either of two windows — morning (CET 09:00–11:00) or afternoon (CET 14:00–17:00). I confirm the exact time within one working day.</span><span data-lang="hu">Válassz egyet az alábbi nyitott időpontokból. A foglalkozások hétfőtől csütörtökig zajlanak, két idősávban — délelőtt (CET 09:00–11:00) vagy délután (CET 14:00–17:00). Egy munkanapon belül megerősítem a pontos időt.</span></p>
+          <h3>Choose a window</h3>
+          <p>Pick one of the open slots below. Sessions run Monday to Thursday, in either of two windows — morning (CET 09:00–11:00) or afternoon (CET 14:00–17:00). I confirm the exact time within one working day.</p>
         </div>
-        <div class="service__meta"><span class="price"><span data-lang="en">Step 1</span><span data-lang="hu">1. lépés</span></span><span class="invitation">~ 2 min</span></div>
+        <div class="service__meta"><span class="price">Step 1</span><span class="invitation">~ 2 min</span></div>
       </article>
 
       <article class="service">
         <span class="service__num">ii.</span>
         <div class="service__body">
-          <h3><span data-lang="en">Write the situation</span><span data-lang="hu">Írd le a helyzetet</span></h3>
-          <p><span data-lang="en">Two short paragraphs. The first: where are you losing control of the frame? The second: what conversation is coming up that you'd handle differently if you saw it clearly? You don't need to be polished. You do need to be honest.</span><span data-lang="hu">Két rövid bekezdés. Az első: hol veszíted el a keret feletti kontrollt? A második: milyen közelgő beszélgetést kezelnél másképp, ha tisztán látnád? Nem kell csiszoltnak lenned. Őszintének kell lenned.</span></p>
+          <h3>Write the situation</h3>
+          <p>Two short paragraphs. The first: where are you losing control of the frame? The second: what conversation is coming up that you'd handle differently if you saw it clearly? You don't need to be polished. You do need to be honest.</p>
         </div>
-        <div class="service__meta"><span class="price"><span data-lang="en">Step 2</span><span data-lang="hu">2. lépés</span></span><span class="invitation">~ 10 min</span></div>
+        <div class="service__meta"><span class="price">Step 2</span><span class="invitation">~ 10 min</span></div>
       </article>
 
       <article class="service">
         <span class="service__num">iii.</span>
         <div class="service__body">
-          <h3><span data-lang="en">Pay the fixed price</span><span data-lang="hu">Fizesd ki a fix árat</span></h3>
-          <p><span data-lang="en">Bank transfer in EUR or HUF. The session is confirmed only after payment clears, usually within one business day. The full Diagnostic is held — never split, never reduced — at the price published on the Pricing page.</span><span data-lang="hu">Banki átutalás EUR-ban vagy HUF-ban. A foglalkozás csak az átutalás beérkezése után kerül megerősítésre, ami általában egy munkanap. A teljes Diagnosztika megtartva — soha nem felosztva, soha nem csökkentve — az Árak oldalon közzétett áron.</span></p>
+          <h3>Pay the fixed price</h3>
+          <p>Bank transfer in EUR or HUF. The session is confirmed only after payment clears, usually within one business day. The full Diagnostic is held — never split, never reduced — at the price published on the Pricing page.</p>
         </div>
-        <div class="service__meta"><span class="price"><span data-lang="en">Step 3</span><span data-lang="hu">3. lépés</span></span><span class="invitation"><a href="pricing.html"><span data-lang="en">View price</span><span data-lang="hu">Ár megtekintése</span></a></span></div>
+        <div class="service__meta"><span class="price">Step 3</span><span class="invitation"><a href="pricing.html">View price</a></span></div>
       </article>
     </div>
   </div>
@@ -100,8 +101,8 @@
   <div class="container">
     <header class="section__head reveal">
       <span class="hairline"></span>
-      <span class="label"><span data-lang="en">Available Windows</span><span data-lang="hu">Elérhető Időpontok</span></span>
-      <h2 style="margin-top:24px;"><span data-lang="en">Six open slots.<br/>Held two weeks ahead.</span><span data-lang="hu">Hat nyitott hely.<br/>Két hétre előre tartva.</span></h2>
+      <span class="label">Available Windows</span>
+      <h2 style="margin-top:24px;">Six open slots.<br/>Held two weeks ahead.</h2>
     </header>
 
     <div class="reveal" style="border-top: 1px solid var(--border);">
@@ -109,48 +110,48 @@
       <button type="button" class="slot-row" data-slot="2026-05-04 AM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Monday</span><br/><span class="num" style="color:var(--white); font-size:22px;">04 May 2026</span></span>
         <span class="slot-row__window">CET 09:00 — 11:00</span>
-        <span class="slot-row__status"><span data-lang="en">Open</span><span data-lang="hu">Nyitott</span></span>
-        <span class="slot-row__action"><span data-lang="en">Choose</span><span data-lang="hu">Választom</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Open</span>
+        <span class="slot-row__action">Choose<span class="cta__arrow">→</span></span>
       </button>
 
       <button type="button" class="slot-row" data-slot="2026-05-06 PM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Wednesday</span><br/><span class="num" style="color:var(--white); font-size:22px;">06 May 2026</span></span>
         <span class="slot-row__window">CET 14:00 — 17:00</span>
-        <span class="slot-row__status"><span data-lang="en">Open</span><span data-lang="hu">Nyitott</span></span>
-        <span class="slot-row__action"><span data-lang="en">Choose</span><span data-lang="hu">Választom</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Open</span>
+        <span class="slot-row__action">Choose<span class="cta__arrow">→</span></span>
       </button>
 
       <button type="button" class="slot-row is-tentative" data-slot="2026-05-11 AM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Monday</span><br/><span class="num" style="color:var(--white); font-size:22px;">11 May 2026</span></span>
         <span class="slot-row__window">CET 09:00 — 11:00</span>
-        <span class="slot-row__status"><span data-lang="en">Held</span><span data-lang="hu">Tartva</span></span>
-        <span class="slot-row__action"><span data-lang="en">Wait-list</span><span data-lang="hu">Várólista</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Held</span>
+        <span class="slot-row__action">Wait-list<span class="cta__arrow">→</span></span>
       </button>
 
       <button type="button" class="slot-row" data-slot="2026-05-14 PM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Thursday</span><br/><span class="num" style="color:var(--white); font-size:22px;">14 May 2026</span></span>
         <span class="slot-row__window">CET 14:00 — 17:00</span>
-        <span class="slot-row__status"><span data-lang="en">Open</span><span data-lang="hu">Nyitott</span></span>
-        <span class="slot-row__action"><span data-lang="en">Choose</span><span data-lang="hu">Választom</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Open</span>
+        <span class="slot-row__action">Choose<span class="cta__arrow">→</span></span>
       </button>
 
       <button type="button" class="slot-row" data-slot="2026-05-19 AM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Tuesday</span><br/><span class="num" style="color:var(--white); font-size:22px;">19 May 2026</span></span>
         <span class="slot-row__window">CET 09:00 — 11:00</span>
-        <span class="slot-row__status"><span data-lang="en">Open</span><span data-lang="hu">Nyitott</span></span>
-        <span class="slot-row__action"><span data-lang="en">Choose</span><span data-lang="hu">Választom</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Open</span>
+        <span class="slot-row__action">Choose<span class="cta__arrow">→</span></span>
       </button>
 
       <button type="button" class="slot-row" data-slot="2026-05-21 PM">
         <span class="slot-row__date"><span class="serif" style="font-style:italic;">Thursday</span><br/><span class="num" style="color:var(--white); font-size:22px;">21 May 2026</span></span>
         <span class="slot-row__window">CET 14:00 — 17:00</span>
-        <span class="slot-row__status"><span data-lang="en">Open</span><span data-lang="hu">Nyitott</span></span>
-        <span class="slot-row__action"><span data-lang="en">Choose</span><span data-lang="hu">Választom</span><span class="cta__arrow">→</span></span>
+        <span class="slot-row__status">Open</span>
+        <span class="slot-row__action">Choose<span class="cta__arrow">→</span></span>
       </button>
 
     </div>
 
-    <p class="reveal note-italic" style="margin-top:48px; max-width:60ch;"><span data-lang="en">If none of these work, propose a window in the form below — Mondays through Thursdays only. I respond personally to every request, and I never schedule a Diagnostic without seeing your situation in writing first.</span><span data-lang="hu">Ha egyik sem alkalmas, javasolj egy időpontot az alábbi űrlapon — kizárólag hétfőtől csütörtökig. Minden kérésre személyesen válaszolok, és soha nem foglalok Diagnosztikát anélkül, hogy előtte írásban ne látnám a helyzetedet.</span></p>
+    <p class="reveal note-italic" style="margin-top:48px; max-width:60ch;">If none of these work, propose a window in the form below — Mondays through Thursdays only. I respond personally to every request, and I never schedule a Diagnostic without seeing your situation in writing first.</p>
   </div>
 </section>
 
@@ -160,24 +161,24 @@
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label"><span data-lang="en">Tell Me the Situation</span><span data-lang="hu">Írd Le a Helyzetet</span></span>
-        <h2><span data-lang="en">The form is<br/>also the filter.<br/><em>Write it in earnest.</em></span><span data-lang="hu">Az űrlap egyben<br/>a szűrő is.<br/><em>Komolyan írd.</em></span></h2>
-        <p class="closing" style="margin-top:32px;"><span data-lang="en">I read every submission myself, the morning after it arrives. If we're a fit, you'll hear back within one working day with a confirmed time and payment instructions.</span><span data-lang="hu">Minden beérkezést én olvasok el, az érkezés utáni reggelen. Ha illünk, egy munkanapon belül választ kapsz megerősített időponttal és fizetési útmutatóval.</span></p>
+        <span class="label">Tell Me the Situation</span>
+        <h2>The form is<br/>also the filter.<br/><em>Write it in earnest.</em></h2>
+        <p class="closing" style="margin-top:32px;">I read every submission myself, the morning after it arrives. If we're a fit, you'll hear back within one working day with a confirmed time and payment instructions.</p>
       </div>
 
       <form class="booking-form reveal" data-lang-block-keep onsubmit="event.preventDefault(); document.querySelector('.booking-form').classList.add('is-sent');" style="--reveal-delay:160ms">
         <div class="ff-field">
-          <label for="b-name"><span data-lang="en">Your name</span><span data-lang="hu">A neved</span></label>
+          <label for="b-name">Your name</label>
           <input id="b-name" type="text" required />
         </div>
         <div class="ff-field">
-          <label for="b-email"><span data-lang="en">Email</span><span data-lang="hu">E-mail</span></label>
+          <label for="b-email">Email</label>
           <input id="b-email" type="email" required />
         </div>
         <div class="ff-field">
-          <label for="b-role"><span data-lang="en">Which describes you?</span><span data-lang="hu">Melyik ír le téged?</span></label>
+          <label for="b-role">Which describes you?</label>
           <select id="b-role" required>
-            <option value="" disabled selected><span data-lang="en">Choose one</span></option>
+            <option value="" disabled selected>Choose one</option>
             <option value="freelancer">Senior freelancer / independent designer</option>
             <option value="agency">Agency principal or partner</option>
             <option value="leader">Corporate design leader</option>
@@ -185,24 +186,24 @@
           </select>
         </div>
         <div class="ff-field">
-          <label for="b-window"><span data-lang="en">Preferred window</span><span data-lang="hu">Kívánt időablak</span></label>
+          <label for="b-window">Preferred window</label>
           <input id="b-window" type="text" placeholder="04 May 2026, AM (CET)" />
         </div>
         <div class="ff-field">
-          <label for="b-frame"><span data-lang="en">Where are you losing control of the frame? <em class="serif">(one paragraph)</em></span><span data-lang="hu">Hol veszíted el a keret feletti kontrollt? <em class="serif">(egy bekezdés)</em></span></label>
+          <label for="b-frame">Where are you losing control of the frame? <em class="serif">(one paragraph)</em></label>
           <textarea id="b-frame" rows="5" required></textarea>
         </div>
         <div class="ff-field">
-          <label for="b-next"><span data-lang="en">What conversation is coming up that you'd handle differently? <em class="serif">(one paragraph)</em></span><span data-lang="hu">Milyen közelgő beszélgetést kezelnél másképp? <em class="serif">(egy bekezdés)</em></span></label>
+          <label for="b-next">What conversation is coming up that you'd handle differently? <em class="serif">(one paragraph)</em></label>
           <textarea id="b-next" rows="5" required></textarea>
         </div>
 
         <div class="ff-actions">
-          <button type="submit" class="cta cta--solid"><span data-lang="en">Request the session</span><span data-lang="hu">Foglalkozás kérése</span><span class="cta__arrow">→</span></button>
-          <span class="note-italic"><span data-lang="en">Confirmation within one working day. Payment instructions follow on confirmation.</span><span data-lang="hu">Egy munkanapon belül megerősítés. Fizetési útmutató a megerősítés után.</span></span>
+          <button type="submit" class="cta cta--solid">Request the session<span class="cta__arrow">→</span></button>
+          <span class="note-italic">Confirmation within one working day. Payment instructions follow on confirmation.</span>
         </div>
 
-        <p class="ff-sent note-italic"><span data-lang="en">Received. I'll write back from <a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a> within one working day. — Á.</span><span data-lang="hu">Megérkezett. Egy munkanapon belül írok az <a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a> címről. — Á.</span></p>
+        <p class="ff-sent note-italic">Received. I'll write back from <a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a> within one working day. — Á.</p>
       </form>
     </div>
   </div>
@@ -213,37 +214,26 @@
   <div class="container">
     <div class="two-col reveal">
       <div class="two-col__item">
-        <h3><span data-lang="en">On the day</span><span data-lang="hu">A napon</span></h3>
-        <ul data-lang-block="en">
+        <h3>On the day</h3>
+        <ul>
           <li>We meet on the platform you choose — Zoom, Meet, or in person in Budapest.</li>
           <li>We start on time. The room is private. Nothing is recorded.</li>
           <li>The first twenty minutes are mine — I read your situation back to you, in different words.</li>
           <li>The next forty are ours.</li>
           <li>The last ten are a written one-page frame, drafted live.</li>
         </ul>
-        <ul data-lang-block="hu">
-          <li>A választott platformon találkozunk — Zoom, Meet vagy személyesen Budapesten.</li>
-          <li>Pontosan kezdünk. A tér privát. Semmi nincs felvéve.</li>
-          <li>Az első húsz perc az enyém — visszaolvasom a helyzetedet, más szavakkal.</li>
-          <li>A következő negyven a miénk.</li>
-          <li>Az utolsó tíz egy egyoldalas keret, élőben írva.</li>
-        </ul>
+        
       </div>
       <div class="two-col__item">
-        <h3><span data-lang="en">If this isn't for you</span><span data-lang="hu">Ha ez nem neked való</span></h3>
-        <ul data-lang-block="en">
+        <h3>If this isn't for you</h3>
+        <ul>
           <li>You're looking for a free intro call.</li>
           <li>You want a UX audit, a brand critique, or a design review.</li>
           <li>You're hoping to negotiate the price.</li>
           <li>You can't articulate the problem in writing.</li>
         </ul>
-        <ul data-lang-block="hu">
-          <li>Ingyenes ismerkedő hívást keresel.</li>
-          <li>UX-auditot, brand-kritikát vagy design-review-t szeretnél.</li>
-          <li>Az árat szeretnéd lealkudni.</li>
-          <li>Írásban nem tudod megfogalmazni a problémát.</li>
-        </ul>
-        <p class="closing"><span data-lang="en">In any of those cases, the form will tell me, and I'll write back honestly. The Diagnostic stands on its own. It's a filter — not a funnel.</span><span data-lang="hu">Bármelyik esetben az űrlap megmutatja, és őszintén válaszolok. A Diagnosztika önmagában áll. Szűrő — nem tölcsér.</span></p>
+        
+        <p class="closing">In any of those cases, the form will tell me, and I'll write back honestly. The Diagnostic stands on its own. It's a filter — not a funnel.</p>
       </div>
     </div>
   </div>
@@ -252,8 +242,8 @@
 <section class="closing-cta" data-screen-label="06 Book — CTA">
   <div class="container reveal">
     <span class="hairline"></span>
-    <h2><span data-lang="en">Want to read about<br/>the Diagnostic first?</span><span data-lang="hu">Olvasnál előbb<br/>a Diagnosztikáról?</span></h2>
-    <a class="cta" href="diagnostic.html"><span data-lang="en">What the Diagnostic is</span><span data-lang="hu">Mi a Diagnosztika</span><span class="cta__arrow">→</span></a>
+    <h2>Want to read about<br/>the Diagnostic first?</h2>
+    <a class="cta" href="diagnostic.html">What the Diagnostic is<span class="cta__arrow">→</span></a>
   </div>
 </section>
 
@@ -262,34 +252,34 @@
     <div class="footer__row">
       <div class="footer__col">
         <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
-        <p class="footer__tag"><span data-lang="en">A private advisory practice.<br/>Budapest.</span><span data-lang="hu">Privát tanácsadói praxis.<br/>Budapest.</span></p>
+        <p class="footer__tag">A private advisory practice.<br/>Budapest.</p>
       </div>
-      <div class="footer__col"><h4><span data-lang="en">Practice</span><span data-lang="hu">Praxis</span></h4><ul>
-        <li><a href="diagnostic.html"><span data-lang="en">The Diagnostic</span><span data-lang="hu">A Diagnosztika</span></a></li>
-        <li><a href="book.html"><span data-lang="en">Book a Diagnostic</span><span data-lang="hu">Időpont foglalás</span></a></li>
-        <li><a href="pricing.html"><span data-lang="en">Pricing</span><span data-lang="hu">Árak</span></a></li>
-        <li><a href="writing.html"><span data-lang="en">Writing</span><span data-lang="hu">Írások</span></a></li>
-        <li><a href="about.html"><span data-lang="en">About</span><span data-lang="hu">Rólam</span></a></li>
+      <div class="footer__col"><h4>Practice</h4><ul>
+        <li><a href="diagnostic.html">The Diagnostic</a></li>
+        <li><a href="book.html">Book a Diagnostic</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="writing.html">Writing</a></li>
+        <li><a href="about.html">About</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Engagements</span><span data-lang="hu">Együttműködések</span></h4><ul>
-        <li><a href="freelancers.html"><span data-lang="en">For Freelancers</span><span data-lang="hu">Szabadúszóknak</span></a></li>
-        <li><a href="agencies.html"><span data-lang="en">For Agencies</span><span data-lang="hu">Ügynökségeknek</span></a></li>
-        <li><a href="leaders.html"><span data-lang="en">For Design Leaders</span><span data-lang="hu">Designvezetőknek</span></a></li>
-        <li><a href="workshop.html"><span data-lang="en">Workshop</span><span data-lang="hu">Műhely</span></a></li>
+      <div class="footer__col"><h4>Engagements</h4><ul>
+        <li><a href="freelancers.html">For Freelancers</a></li>
+        <li><a href="agencies.html">For Agencies</a></li>
+        <li><a href="leaders.html">For Design Leaders</a></li>
+        <li><a href="workshop.html">Workshop</a></li>
       </ul></div>
-      <div class="footer__col"><h4><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></h4><ul>
-        <li><a href="contact.html"><span data-lang="en">Contact</span><span data-lang="hu">Kapcsolat</span></a></li>
-        <li><a href="imprint.html"><span data-lang="en">Imprint</span><span data-lang="hu">Impresszum</span></a></li>
+      <div class="footer__col"><h4>Contact</h4><ul>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="imprint.html">Imprint</a></li>
       </ul></div>
     </div>
     <div class="footer__legal">
       <span>© 2026 Ádám Drágus.</span>
-      <span class="note-italic"><span data-lang="en">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span><span data-lang="hu">Decision Design — azoknak a pillanatoknak a tervezése, amelyek eldöntik, hogy a munkád életben marad-e.</span></span>
+      <span class="note-italic">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span>
     </div>
   </div>
 </footer>
 
-<div class="page-marker"><span class="num">08</span><span data-lang="en">Book</span><span data-lang="hu">Foglalás</span></div>
+<div class="page-marker"><span class="num">08</span>Book</div>
 </main>
 
 <style>
