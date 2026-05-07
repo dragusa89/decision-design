@@ -12,41 +12,37 @@
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
-  <nav class="nav__links">
+  <nav class="nav__links" aria-label="Primary">
     <a class="nav__link is-active" href="diagnostic.html">The Diagnostic</a>
     <a class="nav__link" href="freelancers.html">For Freelancers</a>
     <a class="nav__link" href="agencies.html">For Agencies</a>
     <a class="nav__link" href="leaders.html">For Leaders</a>
     <a class="nav__link" href="about.html">About</a>
-    </nav>
-  <button class="nav__menu-toggle">Menu</button>
+  </nav>
+  <button class="nav__menu-toggle" aria-label="Open menu">Menu</button>
 </header>
 
-<aside class="mobile-nav">
+<aside class="mobile-nav" aria-hidden="true">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
   <div class="mobile-nav__links">
-    <a class="mobile-nav__link" href="diagnostic.html">The Diagnostic</a>
-    <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link is-active" href="diagnostic.html">The Diagnostic</a>
     <a class="mobile-nav__link" href="freelancers.html">For Freelancers</a>
     <a class="mobile-nav__link" href="agencies.html">For Agencies</a>
-    <a class="mobile-nav__link" href="leaders.html">For Design Leaders</a>
+    <a class="mobile-nav__link" href="leaders.html">For Leaders</a>
+    <a class="mobile-nav__link" href="about.html">About</a>
   </div>
-  
 </aside>
 
 <main>
 <section class="hero hero--with-canvas container" data-screen-label="01 Diagnostic — Hero">
   <canvas class="hero-canvas" data-density="0.7" data-intensity="0.7" aria-hidden="true"></canvas>
   <div class="reveal"><span class="eyebrow hero__eyebrow">The Diagnostic</span></div>
-  <h1 class="reveal" style="--reveal-delay:120ms; font-size: clamp(40px, 5.6vw, 68px); font-weight: 500">
+  <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 500">
     Clarity about the problem<br/>is the <em>first act</em><br/>of solving it.
-    
   </h1>
   <p class="hero__lede reveal" style="--reveal-delay:260ms">
     Most designers know something is wrong with how their decisions are being handled. Very few have seen it clearly enough to know where to start.
-    
   </p>
-
   <aside class="hero__meta" aria-hidden="true">
     <span class="hero__meta-line is-gold">№ 02 — Diagnostic</span>
     <span class="hero__meta-line">Duration <span class="num">60–90 min</span></span>
@@ -62,10 +58,7 @@
     <header class="section__head reveal">
       <span class="hairline"></span>
       <span class="label">A Filter, Not a Funnel</span>
-      <h2 style="margin-top:24px;">
-        One conversation.<br/>Two clear definitions.
-        
-      </h2>
+      <h2 style="margin-top:24px;">One conversation.<br/>Two clear definitions.</h2>
     </header>
 
     <div class="two-col reveal">
@@ -78,11 +71,7 @@
           <li>Which conversations are bypassing you?</li>
           <li>What frame is being set before you arrive?</li>
         </ul>
-        
-        <p class="closing">
-          You leave with a clear picture of your situation and a frame for how to approach it.
-          
-        </p>
+        <p class="closing">You leave with a clear picture of your situation and a frame for how to approach it.</p>
       </div>
       <div class="two-col__item">
         <h3>What It Isn't</h3>
@@ -92,39 +81,14 @@
           <li>Not a coaching session.</li>
           <li>Not a pitch for further services.</li>
         </ul>
-        
-        <p class="closing">
-          The Diagnostic stands on its own.<br/>It's not a funnel — <em>it's a filter.</em>
-          
-        </p>
+        <p class="closing">The Diagnostic stands on its own.<br/>It's not a funnel — <em>it's a filter.</em></p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section surface" data-screen-label="03 Diagnostic — Pricing">
-  <div class="container">
-    <div class="split">
-      <div class="split__label reveal">
-        <span class="hairline"></span>
-        <span class="label">Investment</span>
-        <h2>One session.<br/>Fixed price.<br/><em>No hidden offers.</em></h2>
-      </div>
-      <div class="split__body prose reveal" style="--reveal-delay:160ms">
-        
-          <p>The Diagnostic is priced clearly and stated on the booking page. If we decide to continue working together, that conversation happens after — <em>never during.</em></p>
-
-        <div style="margin-top:40px;">
-          <a class="cta" href="#">View Pricing &amp; Book<span class="cta__arrow">→</span></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHAT HAPPENS AFTER -->
-<section class="section" data-screen-label="04 Diagnostic — After">
+<!-- AFTER THE SESSION -->
+<section class="section surface" data-screen-label="03 Diagnostic — After">
   <div class="container">
     <div class="split">
       <div class="split__label reveal">
@@ -137,58 +101,95 @@
           <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
             <span class="service__num">i.</span>
             <div class="service__body">
-              <h3 style="font-size:22px;">
-                You run with it yourself.
-                
-              </h3>
-              <p>
-                You take the clarity you've gained and apply it. Many people do exactly this — and that's the point.
-                
-              </p>
+              <h3 style="font-size:22px;">You run with it yourself.</h3>
+              <p>You take the clarity you've gained and apply it. Many people do exactly this — and that's the point.</p>
             </div>
           </div>
           <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
             <span class="service__num">ii.</span>
             <div class="service__body">
-              <h3 style="font-size:22px;">
-                A defined engagement.
-                
-              </h3>
-              <p>
-                We continue with a specific scope — a pitch, a negotiation, a relationship. Fixed range.
-                
-              </p>
+              <h3 style="font-size:22px;">A defined engagement.</h3>
+              <p>We continue with a specific scope — a pitch, a negotiation, a relationship. Fixed range.</p>
             </div>
           </div>
           <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0; border-bottom:0;">
             <span class="service__num">iii.</span>
             <div class="service__body">
-              <h3 style="font-size:22px;">
-                An ongoing retainer.
-                
-              </h3>
-              <p>
-                By invitation only. Discussed only if it's a clear fit, and never on the day of the Diagnostic.
-                
-              </p>
+              <h3 style="font-size:22px;">An ongoing retainer.</h3>
+              <p>By invitation only. Discussed only if it's a clear fit, and never on the day of the Diagnostic.</p>
             </div>
           </div>
         </div>
-        <p class="note-italic" style="margin-top:32px; font-size:15px;">
-          Either way, the Diagnostic stands on its own. You won't be asked to buy anything in the room.
-          
-        </p>
+        <p class="note-italic" style="margin-top:32px; font-size:15px;">Either way, the Diagnostic stands on its own. You won't be asked to buy anything in the room.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- CLOSING CTA -->
-<section class="closing-cta" data-screen-label="05 Diagnostic — Closing">
-  <div class="container reveal">
-    <span class="hairline"></span>
-    <h2>The first act.<br/>The clearest one.</h2>
-    <a class="cta" href="book.html">Book a Diagnostic<span class="cta__arrow">→</span></a>
+<!-- PRICING -->
+<section class="section" data-screen-label="04 Diagnostic — Pricing">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label">Investment</span>
+        <h2>One session.<br/>Fixed price.<br/><em>No hidden offers.</em></h2>
+      </div>
+      <div class="split__body prose reveal" style="--reveal-delay:160ms">
+        <p>The Diagnostic is priced clearly and stated below. If we decide to continue working together, that conversation happens after — <em>never during.</em></p>
+        <p style="margin-top:32px; font-family:var(--serif); font-size:clamp(28px,3.5vw,42px); font-weight:500; color:var(--white); letter-spacing:-0.01em; line-height:1.1;">€ 350</p>
+        <p class="note-italic" style="margin-top:12px;">Payable by bank transfer in EUR or HUF before the session. The session is confirmed once payment clears — usually within one business day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING FORM -->
+<section class="section surface" data-screen-label="05 Diagnostic — Book">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label">Book a Session</span>
+        <h2>The form is<br/>also the filter.<br/><em>Write it in earnest.</em></h2>
+        <p style="margin-top:32px; font-family:var(--serif); font-style:italic; font-size:16px; line-height:1.6; color:var(--muted);">I read every submission personally. If it's not a fit, I'll write back and say so. No hard feelings, no sales follow-up.</p>
+      </div>
+
+      <form class="booking-form reveal" style="--reveal-delay:160ms"
+            onsubmit="event.preventDefault(); this.classList.add('is-sent');">
+        <div class="ff-field">
+          <label for="b-name">Name</label>
+          <input id="b-name" type="text" required autocomplete="name" />
+        </div>
+        <div class="ff-field">
+          <label for="b-email">Email</label>
+          <input id="b-email" type="email" required autocomplete="email" />
+        </div>
+        <div class="ff-field">
+          <label for="b-role">Who you are</label>
+          <select id="b-role" required>
+            <option value="" disabled selected>Choose one</option>
+            <option value="freelancer">Senior freelancer / independent designer</option>
+            <option value="agency">Agency principal or partner</option>
+            <option value="leader">Corporate design leader</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="ff-field">
+          <label for="b-window">Preferred window</label>
+          <input id="b-window" type="text" placeholder="e.g. any weekday morning, CET" autocomplete="off" />
+        </div>
+        <div class="ff-field">
+          <label for="b-situation">The situation <em class="serif">(two paragraphs)</em></label>
+          <textarea id="b-situation" rows="7" required placeholder="Where are you losing control of the frame? What conversation is coming up that you'd handle differently if you saw it clearly?"></textarea>
+        </div>
+        <div class="ff-actions">
+          <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
+          <span class="note-italic">I'll write back within one working day.</span>
+        </div>
+        <p class="ff-sent note-italic">Thank you. I'll write back within one working day. — Á.</p>
+      </form>
+    </div>
   </div>
 </section>
 
@@ -199,22 +200,34 @@
         <div class="footer__brand">Ádám Drágus<span style="color:var(--muted); margin:0 6px; font-style:italic;">/</span>Decision Design</div>
         <p class="footer__tag">A private advisory practice.<br/>Budapest.</p>
       </div>
-      <div class="footer__col"><h4>Practice</h4><ul>
-        <li><a href="diagnostic.html">The Diagnostic</a></li>
-        <li><a href="book.html">Book a Diagnostic</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul></div>
-      <div class="footer__col"><h4>Engagements</h4><ul>
-        <li><a href="freelancers.html">For Freelancers</a></li>
-        <li><a href="agencies.html">For Agencies</a></li>
-        <li><a href="leaders.html">For Design Leaders</a></li>
-      </ul></div>
-      <div class="footer__col"><h4>Contact</h4><ul>
-        <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
-      </ul></div>
+      <div class="footer__col">
+        <h4>Practice</h4>
+        <ul>
+          <li><a href="diagnostic.html">The Diagnostic</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Engagements</h4>
+        <ul>
+          <li><a href="freelancers.html">For Freelancers</a></li>
+          <li><a href="agencies.html">For Agencies</a></li>
+          <li><a href="leaders.html">For Design Leaders</a></li>
+          <li><a href="workshop.html">Workshop</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>More</h4>
+        <ul>
+          <li><a href="writing.html">Writing</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
+          <li><a href="imprint.html">Imprint</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer__legal">
-      <span>© 2026 Ádám Drágus.</span>
+      <span>© 2026 Ádám Drágus. All rights reserved.</span>
       <span class="note-italic">Decision Design — the practice of designing the moments that determine whether your work lives or dies.</span>
     </div>
   </div>
@@ -222,5 +235,58 @@
 
 <div class="page-marker"><span class="num">02</span>The Diagnostic</div>
 </main>
+
+<style>
+  .booking-form {
+    display: grid;
+    gap: 28px;
+    padding: 48px;
+    background: rgba(28, 26, 22, 0.5);
+    border: 1px solid var(--border);
+  }
+  .booking-form .ff-field { display: grid; gap: 10px; }
+  .booking-form label {
+    font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--gold); font-weight: 500;
+  }
+  .booking-form label em { font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--muted); font-style: italic; margin-left: 4px; }
+  .booking-form input,
+  .booking-form textarea,
+  .booking-form select {
+    width: 100%;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--white);
+    font-family: var(--sans);
+    font-size: 16px;
+    font-weight: 300;
+    padding: 8px 0 12px;
+    transition: border-color 240ms ease;
+  }
+  .booking-form textarea { resize: vertical; min-height: 120px; }
+  .booking-form input:focus,
+  .booking-form textarea:focus,
+  .booking-form select:focus { outline: 0; border-bottom-color: var(--gold); }
+  .booking-form select option { background: var(--surface); color: var(--white); }
+  .booking-form .ff-actions {
+    display: flex; gap: 32px; align-items: center; flex-wrap: wrap;
+    margin-top: 12px; padding-top: 24px; border-top: 1px solid var(--border);
+  }
+  .booking-form .ff-sent { display: none; padding: 24px 0 0; border-top: 1px solid var(--gold-dim); }
+  .booking-form.is-sent .ff-sent { display: block; }
+  .booking-form.is-sent .ff-actions { display: none; }
+  .booking-form .cta--solid {
+    background: var(--gold); color: var(--black);
+    padding: 14px 24px; font-weight: 500; border-bottom: 0;
+  }
+  .booking-form .cta--solid::after { display: none; }
+  .booking-form .cta--solid:hover { background: var(--white); color: var(--black); }
+  @media (max-width: 880px) {
+    .booking-form { padding: 32px 24px; }
+  }
+</style>
+
 </body>
 </html>
