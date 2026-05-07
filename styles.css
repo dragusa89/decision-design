@@ -311,6 +311,9 @@ a { color: inherit; text-decoration: none; }
 .hero--with-canvas > *:not(.hero__canvas):not(.hero-canvas):not(.fx-canvas),
 .closing-cta--with-canvas > *:not(.fx-canvas):not(.hero-canvas) { position: relative; z-index: 1; }
 .hero__canvas.is-ready, .hero-canvas.is-ready, .fx-canvas.is-ready { opacity: 1; }
+@media (max-width: 767px) {
+  .hero__canvas, .hero-canvas, .fx-canvas { display: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   .hero__canvas, .hero-canvas, .fx-canvas { display: none; }
 }

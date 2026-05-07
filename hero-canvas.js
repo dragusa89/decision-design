@@ -12,6 +12,7 @@
 
 (function () {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  if (window.innerWidth < 768) return;
 
   const canvases = document.querySelectorAll('canvas.hero-canvas, #heroCanvas');
   if (!canvases.length) return;
