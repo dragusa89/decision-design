@@ -540,6 +540,55 @@ a { color: inherit; text-decoration: none; }
   .service__meta { text-align: left; padding-top: 0; }
 }
 
+/* Audience pricing block ------------------------------------------------- */
+
+.pricing-block {
+  border-top: 1px solid var(--border);
+  padding-top: 56px;
+}
+.pricing-block__label {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+.pricing-block__amount {
+  font-family: var(--serif);
+  font-size: clamp(44px, 6vw, 72px);
+  font-weight: 500;
+  color: var(--white);
+  letter-spacing: -0.02em;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.pricing-block__detail {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 18px;
+  color: var(--body);
+  line-height: 1.6;
+}
+.pricing-block__links {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 32px;
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+.pricing-block__links a {
+  color: var(--gold);
+  text-decoration: none;
+  border-bottom: 1px solid var(--gold-dim);
+  padding-bottom: 2px;
+  transition: color 200ms, border-color 200ms;
+}
+.pricing-block__links a:hover { color: var(--white); border-color: var(--white); }
+
 /* Two-column compare ---------------------------------------------------- */
 
 .two-col {
