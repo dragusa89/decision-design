@@ -19,6 +19,8 @@
 
   --container: 1240px;
   --gutter: 48px;
+
+  --grain-img: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)' opacity='0.04'/%3E%3C/svg%3E");
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -142,16 +144,20 @@ a { color: inherit; text-decoration: none; }
 .section--hero { padding: 200px 0 160px; }
 
 .surface {
-  background:
-    radial-gradient(1200px 600px at 70% 0%, rgba(201, 168, 76, 0.025), transparent 60%),
-    linear-gradient(180deg, #181510 0%, #161410 50%, #141108 100%);
+  background-color: rgba(28, 26, 22, 0.88);
+  background-image: var(--grain-img);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .surface-2 { background: var(--surface); }
 
-/* Plain dark sections get a faint vertical fade for depth */
-.section:not(.surface):not(.pullquote):not(.closing-cta) {
-  background: linear-gradient(180deg, rgba(245,241,234,0.012) 0%, transparent 40%, transparent 60%, rgba(0,0,0,0.25) 100%);
+/* Frosted glass on all sections below hero */
+.section {
+  background-color: rgba(12, 11, 9, 0.85);
+  background-image: var(--grain-img);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .divider {
@@ -293,6 +299,19 @@ a { color: inherit; text-decoration: none; }
   padding-top: 220px;
   padding-bottom: 160px;
   position: relative;
+}
+
+/* Hero bottom fade — transitions into the frosted sections below */
+.hero--with-canvas::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 180px;
+  background: linear-gradient(to bottom, transparent, rgba(12, 11, 9, 0.85));
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* Decision-architecture line field --------------------------------- */
@@ -599,9 +618,10 @@ a { color: inherit; text-decoration: none; }
 .pullquote {
   text-align: center;
   padding: 180px 0;
-  background:
-    radial-gradient(900px 500px at 50% 50%, rgba(201, 168, 76, 0.04), transparent 65%),
-    linear-gradient(180deg, #181510 0%, #161410 50%, #141108 100%);
+  background-color: rgba(12, 11, 9, 0.85);
+  background-image: var(--grain-img);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
   position: relative;
@@ -667,9 +687,10 @@ a { color: inherit; text-decoration: none; }
 .closing-cta {
   padding: 200px 0;
   text-align: left;
-  background:
-    radial-gradient(800px 500px at 0% 100%, rgba(201, 168, 76, 0.025), transparent 65%),
-    linear-gradient(180deg, #0C0B09 0%, #100E0B 100%);
+  background-color: rgba(12, 11, 9, 0.85);
+  background-image: var(--grain-img);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-top: 1px solid var(--border);
 }
 
@@ -690,7 +711,10 @@ a { color: inherit; text-decoration: none; }
 .footer {
   border-top: 1px solid var(--border);
   padding: 72px 0 56px;
-  background: linear-gradient(180deg, #0C0B09 0%, #08070500 100%);
+  background-color: rgba(12, 11, 9, 0.88);
+  background-image: var(--grain-img);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
 }
 
 .footer__row {
