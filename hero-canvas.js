@@ -19,12 +19,19 @@
   canvases.forEach(initInstance);
 
   function initInstance(canvas) {
+    // Force full-viewport coverage — overrides any container constraint
+    canvas.style.position = 'fixed';
+    canvas.style.top = '0';
+    canvas.style.left = '0';
+    canvas.style.width = '100%';
+    canvas.style.height = '100%';
+
     const ctx = canvas.getContext('2d', { alpha: true });
     const densityMul = parseFloat(canvas.dataset.density) || 1;
     const intensityMul = parseFloat(canvas.dataset.intensity) || 1;
     const INFLUENCE = parseFloat(canvas.dataset.influence) || 240;
 
-    let DPR = Math.min(window.devicePixelRatio || 1, 2);
+    let DPR = window.devicePixelRatio || 1;
     let W = 0, H = 0;
     let nodes = [];
     let edges = [];
@@ -47,10 +54,9 @@
     const FOCAL_COLOR = '201, 168, 76';
 
     function resize() {
-      const rect = canvas.getBoundingClientRect();
       W = window.innerWidth;
-      H = rect.height;
-      DPR = Math.min(window.devicePixelRatio || 1, 2);
+      H = window.innerHeight;
+      DPR = window.devicePixelRatio || 1;
       canvas.width = W * DPR;
       canvas.height = H * DPR;
       ctx.setTransform(DPR, 0, 0, DPR, 0, 0);
@@ -257,6 +263,7 @@
       section.addEventListener('mouseleave', onMouseLeave, { passive: true });
     }
     window.addEventListener('resize', resize);
+    window.addEventListener('orientationchange', () => setTimeout(resize, 100));
 
     resize();
     requestAnimationFrame(() => {
