@@ -48,7 +48,7 @@
 
     function resize() {
       const rect = canvas.getBoundingClientRect();
-      W = rect.width;
+      W = window.innerWidth;
       H = rect.height;
       DPR = Math.min(window.devicePixelRatio || 1, 2);
       canvas.width = W * DPR;
