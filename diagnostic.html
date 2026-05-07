@@ -241,57 +241,6 @@
 <div class="page-marker"><span class="num">02</span>The Diagnostic</div>
 </main>
 
-<style>
-  .booking-form {
-    display: grid;
-    gap: 28px;
-    padding: 48px;
-    background: rgba(28, 26, 22, 0.5);
-    border: 1px solid var(--border);
-  }
-  .booking-form .ff-field { display: grid; gap: 10px; }
-  .booking-form label {
-    font-family: var(--sans);
-    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
-    color: var(--gold); font-weight: 500;
-  }
-  .booking-form label em { font-size: 13px; letter-spacing: 0; text-transform: none; color: var(--muted); font-style: italic; margin-left: 4px; }
-  .booking-form input,
-  .booking-form textarea,
-  .booking-form select {
-    width: 100%;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid var(--border);
-    color: var(--white);
-    font-family: var(--sans);
-    font-size: 16px;
-    font-weight: 300;
-    padding: 8px 0 12px;
-    transition: border-color 240ms ease;
-  }
-  .booking-form textarea { resize: vertical; min-height: 120px; }
-  .booking-form input:focus,
-  .booking-form textarea:focus,
-  .booking-form select:focus { outline: 0; border-bottom-color: var(--gold); }
-  .booking-form select option { background: var(--surface); color: var(--white); }
-  .booking-form .ff-actions {
-    display: flex; gap: 32px; align-items: center; flex-wrap: wrap;
-    margin-top: 12px; padding-top: 24px; border-top: 1px solid var(--border);
-  }
-  .booking-form .ff-sent { display: none; padding: 32px 0; border-top: 1px solid var(--gold-dim); font-size: 18px; line-height: 1.6; color: #EDE8DF; font-family: var(--serif); font-style: italic; font-weight: 400; }
-  .booking-form.is-sent .ff-sent { display: block; }
-  .booking-form.is-sent .ff-actions { display: none; }
-  .booking-form .cta--solid {
-    background: var(--gold); color: var(--black);
-    padding: 14px 24px; font-weight: 500; border-bottom: 0;
-  }
-  .booking-form .cta--solid::after { display: none; }
-  .booking-form .cta--solid:hover { background: var(--white); color: var(--black); }
-  @media (max-width: 880px) {
-    .booking-form { padding: 32px 24px; }
-  }
-</style>
 
 </body>
 </html>

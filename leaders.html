@@ -142,11 +142,57 @@
   </div>
 </section>
 
-<section class="closing-cta" data-screen-label="05 Leaders — CTA">
-  <div class="container reveal">
-    <span class="hairline"></span>
-    <h2>Ready to be part of<br/><em>the decision architecture?</em></h2>
-    <a class="cta" href="diagnostic.html">Start with a Diagnostic<span class="cta__arrow">→</span></a>
+<section class="section surface" data-screen-label="05 Leaders — Book">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <h2>Ready to be part<br/>of the decision?<br/><em>Tell me what's going on.</em></h2>
+        <p class="form-lede">I read every submission myself. A paragraph is enough — you don't need to be polished, you do need to be honest.</p>
+      </div>
+      <form class="booking-form reveal" name="leader-diagnostic" data-netlify="true" style="--reveal-delay:160ms">
+        <input type="hidden" name="form-name" value="leader-diagnostic" />
+        <div class="ff-field">
+          <label for="ld-name">Your name *</label>
+          <input id="ld-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="ff-field">
+          <label for="ld-email">Email *</label>
+          <input id="ld-email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="ff-field">
+          <label for="ld-company">Company / Organisation *</label>
+          <input id="ld-company" name="company" type="text" required />
+        </div>
+        <div class="ff-field">
+          <label for="ld-teamsize">Team size</label>
+          <select id="ld-teamsize" name="team-size">
+            <option value="" disabled selected>Choose one</option>
+            <option value="1-5">1–5</option>
+            <option value="6-15">6–15</option>
+            <option value="16-50">16–50</option>
+            <option value="50+">50+</option>
+          </select>
+        </div>
+        <div class="ff-field">
+          <label for="ld-window">Preferred window</label>
+          <select id="ld-window" name="preferred-window">
+            <option value="" disabled selected>Choose one</option>
+            <option value="morning">Morning CET 09:00–11:00</option>
+            <option value="afternoon">Afternoon CET 14:00–17:00</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+        <div class="ff-field">
+          <label for="ld-situation">Where is design absent from the real decisions?</label>
+          <textarea id="ld-situation" name="situation" rows="6" placeholder="A paragraph is enough."></textarea>
+        </div>
+        <div class="ff-actions">
+          <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
+        </div>
+        <p class="ff-sent">Thank you. I'll write back within one working day. — Á.</p>
+      </form>
+    </div>
   </div>
 </section>
 

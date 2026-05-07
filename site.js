@@ -43,8 +43,24 @@
     });
   }
 
+  function initBookingForms() {
+    document.querySelectorAll('form[data-netlify]').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        fetch('/', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: new URLSearchParams(new FormData(form)).toString()
+        })
+          .then(function () { form.classList.add('is-sent'); })
+          .catch(function () { form.classList.add('is-sent'); });
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initReveal();
     initMobileNav();
+    initBookingForms();
   });
 })();

@@ -141,11 +141,47 @@
   </div>
 </section>
 
-<section class="closing-cta" data-screen-label="05 Agencies — CTA">
-  <div class="container reveal">
-    <span class="hairline"></span>
-    <h2>Stop competing<br/><em>on delivery.</em></h2>
-    <a class="cta" href="diagnostic.html">Start with a Diagnostic<span class="cta__arrow">→</span></a>
+<section class="section surface" data-screen-label="05 Agencies — Book">
+  <div class="container">
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <h2>Ready to stop<br/>competing on delivery?<br/><em>Tell me what's going on.</em></h2>
+        <p class="form-lede">I read every submission myself. A paragraph is enough — you don't need to be polished, you do need to be honest.</p>
+      </div>
+      <form class="booking-form reveal" name="agency-diagnostic" data-netlify="true" style="--reveal-delay:160ms">
+        <input type="hidden" name="form-name" value="agency-diagnostic" />
+        <div class="ff-field">
+          <label for="ag-name">Your name *</label>
+          <input id="ag-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="ff-field">
+          <label for="ag-email">Email *</label>
+          <input id="ag-email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="ff-field">
+          <label for="ag-agency">Agency name *</label>
+          <input id="ag-agency" name="agency-name" type="text" required />
+        </div>
+        <div class="ff-field">
+          <label for="ag-window">Preferred window</label>
+          <select id="ag-window" name="preferred-window">
+            <option value="" disabled selected>Choose one</option>
+            <option value="morning">Morning CET 09:00–11:00</option>
+            <option value="afternoon">Afternoon CET 14:00–17:00</option>
+            <option value="flexible">Flexible</option>
+          </select>
+        </div>
+        <div class="ff-field">
+          <label for="ag-situation">Where is control leaking in your client conversations?</label>
+          <textarea id="ag-situation" name="situation" rows="6" placeholder="A paragraph is enough."></textarea>
+        </div>
+        <div class="ff-actions">
+          <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
+        </div>
+        <p class="ff-sent">Thank you. I'll write back within one working day. — Á.</p>
+      </form>
+    </div>
   </div>
 </section>
 
