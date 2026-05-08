@@ -244,6 +244,16 @@ a { color: inherit; text-decoration: none; }
 .nav__lang button.is-active { color: var(--white); }
 .nav__lang .sep { color: var(--muted); }
 
+.nav__lang-active { color: var(--heading); }
+.nav__lang-sep { color: var(--muted); }
+.nav__lang-option {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+.nav__lang-option:hover { color: var(--gold); }
+.nav__lang { padding-left: 16px; border-left: 1px solid var(--border); }
+
 .nav__menu-toggle {
   display: none;
   background: transparent;
