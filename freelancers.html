@@ -158,8 +158,9 @@
         <h2>Ready to stop<br/>justifying your price?<br/><em>Tell me what's going on.</em></h2>
         <p class="form-lede">I read every submission myself. A paragraph is enough — you don't need to be polished, you do need to be honest.</p>
       </div>
-      <form class="booking-form reveal" name="freelancer-diagnostic" data-netlify="true" style="--reveal-delay:160ms">
+      <form class="booking-form reveal" name="freelancer-diagnostic" data-netlify="true" style="--reveal-delay:160ms" netlify-honeypot="bot-field">
         <input type="hidden" name="form-name" value="freelancer-diagnostic" />
+        <p class="bot-trap" aria-hidden="true"><label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <div class="ff-field">
           <label for="fl-name">Your name *</label>
           <input id="fl-name" name="name" type="text" required autocomplete="name" />

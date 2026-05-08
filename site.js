@@ -44,17 +44,25 @@
   }
 
   function initBookingForms() {
-    document.querySelectorAll('form[data-netlify]').forEach(function (form) {
+    // Select by class name — more reliable than [data-netlify] after Netlify's
+    // build-time HTML processing, which can transform that attribute.
+    document.querySelectorAll('form.booking-form').forEach(function (form) {
+      // Use capture phase so this fires before any other handlers (including
+      // any Netlify-injected script that would otherwise trigger a redirect).
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        fetch('/', {
+        e.stopImmediatePropagation();
+
+        var body = new URLSearchParams(new FormData(form)).toString();
+
+        fetch(window.location.pathname, {
           method: 'POST',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams(new FormData(form)).toString()
+          body: body
         })
           .then(function () { form.classList.add('is-sent'); })
           .catch(function () { form.classList.add('is-sent'); });
-      });
+      }, true); // true = capture phase
     });
   }
 
