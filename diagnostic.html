@@ -160,19 +160,19 @@
         <p style="margin-top:32px; font-family:var(--serif); font-style:italic; font-size:16px; line-height:1.6; color:var(--muted);">I read every submission personally. If it's not a fit, I'll write back and say so. No hard feelings, no sales follow-up.</p>
       </div>
 
-      <form class="booking-form reveal" style="--reveal-delay:160ms"
-            onsubmit="event.preventDefault(); this.classList.add('is-sent');">
+      <form class="booking-form reveal" name="diagnostic-booking" data-netlify="true" style="--reveal-delay:160ms">
+        <input type="hidden" name="form-name" value="diagnostic-booking" />
         <div class="ff-field">
           <label for="b-name">Name</label>
-          <input id="b-name" type="text" required autocomplete="name" />
+          <input id="b-name" name="name" type="text" required autocomplete="name" />
         </div>
         <div class="ff-field">
           <label for="b-email">Email</label>
-          <input id="b-email" type="email" required autocomplete="email" />
+          <input id="b-email" name="email" type="email" required autocomplete="email" />
         </div>
         <div class="ff-field">
           <label for="b-role">Who you are</label>
-          <select id="b-role" required>
+          <select id="b-role" name="role" required>
             <option value="" disabled selected>Choose one</option>
             <option value="freelancer">Senior freelancer / independent designer</option>
             <option value="agency">Agency principal or partner</option>
@@ -182,11 +182,11 @@
         </div>
         <div class="ff-field">
           <label for="b-window">Preferred window</label>
-          <input id="b-window" type="text" placeholder="e.g. any weekday morning, CET" autocomplete="off" />
+          <input id="b-window" name="preferred-window" type="text" placeholder="e.g. any weekday morning, CET" autocomplete="off" />
         </div>
         <div class="ff-field">
           <label for="b-situation">The situation <em class="serif">(two paragraphs)</em></label>
-          <textarea id="b-situation" rows="7" required placeholder="Where are you losing control of the frame? What conversation is coming up that you'd handle differently if you saw it clearly?"></textarea>
+          <textarea id="b-situation" name="situation" rows="7" required placeholder="Where are you losing control of the frame? What conversation is coming up that you'd handle differently if you saw it clearly?"></textarea>
         </div>
         <div class="ff-actions">
           <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
