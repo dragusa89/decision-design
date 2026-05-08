@@ -810,6 +810,12 @@ a { color: inherit; text-decoration: none; }
 }
 .booking-form .cta--solid::after { display: none; }
 .booking-form .cta--solid:hover { background: var(--white); color: var(--black); }
+.bot-trap {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  overflow: hidden;
+}
 .form-lede {
   margin-top: 24px;
   font-family: var(--serif);
