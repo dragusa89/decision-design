@@ -80,17 +80,35 @@
   </div>
 </section>
 
-<section class="section" data-screen-label="04 About — Contact">
+<section class="section surface" data-screen-label="04 About — Conversation">
   <div class="container">
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label">Get in touch</span>
+        <span class="label">Start a conversation</span>
+        <h2 style="font-weight: 300; margin-top: 24px;">Dealing with something<br/>like this yourself?</h2>
+        <p class="form-lede">I'm exploring these ideas in practice — not just in theory. If something here resonates with your situation, I'd like to hear about it.</p>
       </div>
-      <div class="split__body reveal" style="--reveal-delay:160ms">
-        <p style="margin-bottom: 28px;">If something here resonates, I'd like to hear about it.</p>
-        <a class="cta" href="mailto:adam@dragusdesign.com">Write to me<span class="cta__arrow">→</span></a>
-      </div>
+      <form class="booking-form reveal" name="conversation-request-about" data-netlify="true" netlify-honeypot="bot-field" style="--reveal-delay:160ms">
+        <input type="hidden" name="form-name" value="conversation-request-about" />
+        <p class="bot-trap" aria-hidden="true"><label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+        <div class="ff-field">
+          <label for="ca-name">Your name *</label>
+          <input id="ca-name" name="name" type="text" required autocomplete="name" />
+        </div>
+        <div class="ff-field">
+          <label for="ca-email">Email *</label>
+          <input id="ca-email" name="email" type="email" required autocomplete="email" />
+        </div>
+        <div class="ff-field">
+          <label for="ca-situation">What's going on? Tell me about your situation.</label>
+          <textarea id="ca-situation" name="situation" rows="6" required></textarea>
+        </div>
+        <div class="ff-actions">
+          <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
+        </div>
+        <p class="ff-sent">Thank you. I'll read this and write back. — <em>Á.</em></p>
+      </form>
     </div>
   </div>
 </section>
