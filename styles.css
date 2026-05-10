@@ -1230,6 +1230,32 @@ a { color: inherit; text-decoration: none; }
 
 .article-footer__back:hover { color: var(--gold); }
 
+/* Share links ----------------------------------------------------------- */
+.share-links {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.share-links a,
+.share-links button {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--muted);
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: color 200ms ease;
+  text-decoration: none;
+}
+
+.share-links a:hover,
+.share-links button:hover { color: var(--gold); }
+
 /* Page-side index marker ------------------------------------------------ */
 .page-marker {
   position: fixed;

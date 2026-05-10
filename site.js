@@ -66,9 +66,23 @@
     });
   }
 
+  function initShareLinks() {
+    document.querySelectorAll('.share-copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var url = btn.dataset.url || window.location.href;
+        navigator.clipboard.writeText(url).then(function () {
+          var orig = btn.textContent;
+          btn.textContent = 'Copied!';
+          setTimeout(function () { btn.textContent = orig; }, 2000);
+        });
+      });
+    });
+  }
+
   document.addEventListener('DOMContentLoaded', () => {
     initReveal();
     initMobileNav();
     initBookingForms();
+    initShareLinks();
   });
 })();
