@@ -251,12 +251,19 @@
       requestAnimationFrame(frame);
     }
 
-    // Track cursor on the parent section so it works over text/CTAs too.
-    const section = canvas.closest('section, .closing-cta, .pullquote') || canvas.parentElement;
-    if (section) {
-      section.addEventListener('mousemove', onMouseMove, { passive: true });
-      section.addEventListener('mouseleave', onMouseLeave, { passive: true });
+    // Track cursor on window so interaction covers the full-width canvas,
+    // not just the container-constrained section element.
+    function onWindowMouseMove(e) {
+      const rect = canvas.getBoundingClientRect();
+      if (e.clientY < rect.top || e.clientY > rect.bottom) {
+        onMouseLeave();
+        return;
+      }
+      mouse.tx = e.clientX - rect.left;
+      mouse.ty = e.clientY - rect.top;
+      mouse.active = true;
     }
+    window.addEventListener('mousemove', onWindowMouseMove, { passive: true });
     window.addEventListener('resize', resize);
     window.addEventListener('orientationchange', () => setTimeout(resize, 100));
 
