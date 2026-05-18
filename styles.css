@@ -318,6 +318,16 @@ a { color: inherit; text-decoration: none; }
   opacity: 0;
   transition: opacity 1200ms ease;
 }
+/* Break canvas out of container max-width so it always fills the viewport */
+.hero--with-canvas .hero__canvas,
+.hero--with-canvas .hero-canvas {
+  top: 0;
+  bottom: 0;
+  right: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+}
 .hero--with-canvas > *:not(.hero__canvas):not(.hero-canvas):not(.fx-canvas),
 .closing-cta--with-canvas > *:not(.fx-canvas):not(.hero-canvas) { position: relative; z-index: 1; }
 .hero__canvas.is-ready, .hero-canvas.is-ready, .fx-canvas.is-ready { opacity: 1; }
