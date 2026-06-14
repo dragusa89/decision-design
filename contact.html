@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Primary Meta Tags -->
-<meta name="title" content="Decision Design — Ádám Drágus">
-<meta name="description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the practice of designing the moments that determine whether your work lives or dies.">
+<meta name="title" content="Contact — Decision Design">
+<meta name="description" content="If something on this site resonated — an article, an idea, a situation you recognised — I'd like to hear about it.">
 <meta name="author" content="Ádám Drágus">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://dragusdesign.com/contact">
@@ -17,8 +17,8 @@
 <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dragusdesign.com/contact">
-<meta property="og:title" content="Decision Design — Ádám Drágus">
-<meta property="og:description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the practice of designing the moments that determine whether your work lives or dies.">
+<meta property="og:title" content="Contact — Decision Design">
+<meta property="og:description" content="If something on this site resonated — an article, an idea, a situation you recognised — I'd like to hear about it.">
 <meta property="og:image" content="https://dragusdesign.com/assets/social-share.png">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Decision Design">
@@ -26,8 +26,8 @@
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://dragusdesign.com/contact">
-<meta name="twitter:title" content="Decision Design — Ádám Drágus">
-<meta name="twitter:description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the moments that determine whether your work lives or dies.">
+<meta name="twitter:title" content="Contact — Decision Design">
+<meta name="twitter:description" content="If something on this site resonated — an article, an idea, a situation you recognised — I'd like to hear about it.">
 <meta name="twitter:image" content="https://dragusdesign.com/assets/social-share.png">
 <title>Contact — Decision Design</title>
 <link rel="stylesheet" href="styles.css" />
@@ -45,127 +45,84 @@
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
-    <nav class="nav__links" aria-label="Primary">
+  <nav class="nav__links" aria-label="Primary">
     <a class="nav__link" href="writing.html">Writing</a>
     <a class="nav__link" href="about.html">About</a>
-    <span class="nav__lang"><span class="nav__lang-active">EN</span><span class="nav__lang-sep"> / </span><a class="nav__lang-option" href="#">HU</a></span>
-    </nav>
+    <a class="nav__link is-active" href="contact.html">Contact</a>
+  </nav>
   <button class="nav__menu-toggle">Menu</button>
 </header>
 
 <aside class="mobile-nav">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
-    <div class="mobile-nav__links">
+  <div class="mobile-nav__links">
     <a class="mobile-nav__link" href="writing.html">Writing</a>
     <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link is-active" href="contact.html">Contact</a>
   </div>
-  
 </aside>
 
 <main>
 <section class="hero container" data-screen-label="01 Contact — Hero">
   <div class="reveal"><span class="eyebrow hero__eyebrow">Contact</span></div>
   <h1 class="reveal" style="--reveal-delay:120ms">
-    Write directly.<br/>I read everything<br/><em>that comes in.</em>
-    
+    Let's talk.
   </h1>
-  <p class="hero__lede reveal" style="--reveal-delay:260ms">
-    There's no contact desk, no funnel, no automated reply. The address below reaches me. I respond within two working days, often sooner.
-    
+  <p class="hero__lede reveal" style="--reveal-delay:260ms; max-width: 520px;">
+    If something on this site resonated — an article, an idea, a situation you recognised — I'd like to hear about it. I read every message personally and write back.
   </p>
-
-  <aside class="hero__meta" aria-hidden="true">
-    <span class="hero__meta-line is-gold">№ 08 — Contact</span>
-    <span class="hero__meta-line">Reply <span class="num">≤ 48h</span></span>
-    <span class="hero__meta-line">Hours <span class="num">CET 09–18</span></span>
-  </aside>
 </section>
 
 <hr class="divider" />
 
-<section class="section" data-screen-label="02 Contact — Channels">
+<section class="section" data-screen-label="02 Contact — Form">
   <div class="container">
     <div class="split">
+
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label">Channels</span>
-        <h2>Three ways in.<br/><em>One person reads.</em></h2>
+        <span class="label">Write to me</span>
+        <form class="booking-form" name="contact" data-netlify="true" netlify-honeypot="bot-field" style="margin-top: 32px;">
+          <input type="hidden" name="form-name" value="contact" />
+          <p class="bot-trap" aria-hidden="true"><label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="ff-field">
+            <label for="ct-name">Your name *</label>
+            <input id="ct-name" name="name" type="text" required autocomplete="name" />
+          </div>
+          <div class="ff-field">
+            <label for="ct-email">Email *</label>
+            <input id="ct-email" name="email" type="email" required autocomplete="email" />
+          </div>
+          <div class="ff-field">
+            <label for="ct-message">What's on your mind?</label>
+            <textarea id="ct-message" name="message" rows="6" required></textarea>
+          </div>
+          <div class="ff-actions">
+            <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
+          </div>
+          <p class="ff-sent">Thank you. I'll write back. — <em>Á.</em></p>
+        </form>
       </div>
+
       <div class="split__body reveal" style="--reveal-delay:160ms">
-        <div class="services" style="border-top:0;">
-          <div class="service" style="grid-template-columns: 80px 1fr 200px; padding: 36px 0;">
-            <span class="service__num">i.</span>
-            <div class="service__body">
-              <h3 style="font-size:24px;">Direct email</h3>
-              <p><a href="mailto:adam@dragusdesign.com" class="link-ghost" style="font-size:18px; letter-spacing:0.02em; text-transform:none; font-family:var(--serif); font-style:italic; color:var(--white);">adam@dragusdesign.com</a></p>
-            </div>
-            <div class="service__meta"><span class="invitation">Best for everything</span></div>
-          </div>
-          <div class="service" style="grid-template-columns: 80px 1fr 200px; padding: 36px 0;">
-            <span class="service__num">ii.</span>
-            <div class="service__body">
-              <h3 style="font-size:24px;">Booking form</h3>
-              <p>If you already know you'd like to start with the Diagnostic, the booking form is the fastest path.</p>
-              <a class="cta cta--small service__cta" href="diagnostic.html">Open the form<span class="cta__arrow">→</span></a>
-            </div>
-            <div class="service__meta"><span class="invitation">Best for booking</span></div>
-          </div>
-          <div class="service" style="grid-template-columns: 80px 1fr 200px; padding: 36px 0; border-bottom:0;">
-            <span class="service__num">iii.</span>
-            <div class="service__body">
-              <h3 style="font-size:24px;">Post</h3>
-              <p style="font-family:var(--serif); font-style:italic; font-size:18px; color: var(--heading);">Decision Design<br/>1052 Budapest, Hungary</p>
-              <p class="note-italic">For invoicing and contracts only. The full address is shared on confirmation.</p>
-            </div>
-            <div class="service__meta"><span class="invitation">Best for paperwork</span></div>
-          </div>
-        </div>
+        <span class="hairline"></span>
+        <span class="label">Direct</span>
+        <p style="margin-top: 20px; font-size: 15px;">
+          <a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a>
+        </p>
+        <p class="note-italic" style="margin-top: 8px; color: var(--muted);">
+          Based in Budapest, Hungary.<br/>Available for remote conversations worldwide.
+        </p>
+
+        <span class="label" style="display:block; margin-top: 40px;">Elsewhere</span>
+        <p style="margin-top: 20px;">
+          <a class="cta cta--small" href="https://www.linkedin.com/in/adamdragus/" target="_blank" rel="noopener">LinkedIn<span class="cta__arrow">→</span></a>
+        </p>
       </div>
+
     </div>
   </div>
 </section>
-
-<section class="section surface" data-screen-label="03 Contact — Form">
-  <div class="container">
-    <header class="section__head reveal">
-      <span class="hairline"></span>
-      <span class="label">Or write here</span>
-      <h2 style="margin-top:24px;">Two paragraphs is plenty.<br/>Specific is better than long.</h2>
-    </header>
-
-    <form class="reveal" style="display:grid; grid-template-columns: 1fr 1fr; gap: 32px 56px;" onsubmit="event.preventDefault(); this.querySelector('[data-confirm]').classList.add('is-on');">
-      <label style="display:flex; flex-direction:column; gap:10px;">
-        <span class="label" style="color: var(--muted);">Name</span>
-        <input type="text" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
-      </label>
-      <label style="display:flex; flex-direction:column; gap:10px;">
-        <span class="label" style="color: var(--muted);">Email</span>
-        <input type="email" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
-      </label>
-      <label style="grid-column: 1 / -1; display:flex; flex-direction:column; gap:10px;">
-        <span class="label" style="color: var(--muted);">Subject</span>
-        <input type="text" style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:18px; padding: 8px 0; outline:none;" />
-      </label>
-      <label style="grid-column: 1 / -1; display:flex; flex-direction:column; gap:10px;">
-        <span class="label" style="color: var(--muted);">Message</span>
-        <textarea rows="6" required style="background:transparent; border:0; border-bottom:1px solid var(--border); color:var(--white); font: inherit; font-size:17px; padding: 12px 0; outline:none; resize:vertical; line-height:1.6;"></textarea>
-      </label>
-      <div style="grid-column: 1 / -1; display:flex; align-items:center; justify-content:space-between; gap:32px; flex-wrap:wrap; margin-top: 16px;">
-        <span class="note-italic" data-confirm>Sent. I'll come back within 48 hours.</span>
-        <button type="submit" class="cta" style="background:transparent; border:0; cursor:pointer; padding-bottom:6px;">
-          Send<span class="cta__arrow">→</span>
-        </button>
-      </div>
-    </form>
-  </div>
-</section>
-
-<style>
-  [data-confirm] { opacity: 0; transition: opacity 400ms ease; }
-  [data-confirm].is-on { opacity: 1; }
-  input:focus, textarea:focus { border-bottom-color: var(--gold) !important; }
-  @media (max-width: 880px) { form[onsubmit] { grid-template-columns: 1fr !important; } }
-</style>
 
 <footer class="footer">
   <div class="container">
@@ -175,27 +132,20 @@
         <p class="footer__tag">A private advisory practice.<br/>Budapest.</p>
       </div>
       <div class="footer__col">
-        <h4>Practice</h4>
-        <ul>
-          <li><a href="diagnostic.html">The Diagnostic</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Engagements</h4>
-        <ul>
-          <li><a href="freelancers.html">For Freelancers</a></li>
-          <li><a href="agencies.html">For Agencies</a></li>
-          <li><a href="leaders.html">For Design Leaders</a></li>
-          <li><a href="workshop.html">Workshop</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>More</h4>
         <ul>
           <li><a href="writing.html">Writing</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul>
           <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
+          <li><a href="https://www.linkedin.com/in/adamdragus/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul>
           <li><a href="imprint.html">Imprint</a></li>
         </ul>
       </div>
@@ -207,7 +157,7 @@
   </div>
 </footer>
 
-<div class="page-marker"><span class="num">08</span>Contact</div>
+<div class="page-marker"><span class="num">05</span>Contact</div>
 </main>
 </body>
 </html>
