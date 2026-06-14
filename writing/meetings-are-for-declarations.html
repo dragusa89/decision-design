@@ -161,6 +161,22 @@
 
       </div>
 
+
+      <div class="newsletter-optin">
+        <span class="hairline" style="display:block; margin-bottom: 32px;"></span>
+        <span class="label">Stay in the loop</span>
+        <p class="newsletter-optin__body">New thinking on design decisions, published when there's something worth saying.</p>
+        <form class="newsletter-form" name="newsletter" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="newsletter" />
+          <p class="bot-trap" aria-hidden="true"><label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
+          <div class="newsletter-form__row">
+            <input class="newsletter-form__input" type="email" name="email" placeholder="Your email address" required autocomplete="email" />
+            <button type="submit" class="cta cta--solid" style="flex-shrink:0;">Subscribe<span class="cta__arrow">→</span></button>
+          </div>
+          <p class="newsletter-form__sent">You're in. I'll write when there's something worth reading.</p>
+        </form>
+      </div>
+
       <div class="article-footer">
         <div class="share-links" style="margin-top: 48px;">
           <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fdragusdesign.com%2Fwriting%2Fmeetings-are-for-declarations" target="_blank" rel="noopener">Share on LinkedIn</a>

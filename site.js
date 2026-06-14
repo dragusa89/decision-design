@@ -66,6 +66,23 @@
     });
   }
 
+  function initNewsletterForms() {
+    document.querySelectorAll('form.newsletter-form').forEach(function (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        var body = new URLSearchParams(new FormData(form)).toString();
+        fetch(window.location.pathname, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body: body
+        })
+          .then(function () { form.classList.add('is-sent'); })
+          .catch(function () { form.classList.add('is-sent'); });
+      }, true);
+    });
+  }
+
   function initShareLinks() {
     document.querySelectorAll('.share-copy').forEach(function (btn) {
       btn.addEventListener('click', function () {
@@ -83,6 +100,7 @@
     initReveal();
     initMobileNav();
     initBookingForms();
+    initNewsletterForms();
     initShareLinks();
   });
 })();
