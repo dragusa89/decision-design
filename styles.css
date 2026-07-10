@@ -1593,3 +1593,58 @@ a { color: inherit; text-decoration: none; }
 }
 .page-marker .num { color: var(--gold); margin-right: 10px; }
 @media (max-width: 880px) { .page-marker { display: none; } }
+
+/* Mobile typography improvements ---------------------------------------- */
+
+@media (max-width: 768px) {
+  /* Body text */
+  body {
+    font-size: 17px;
+    line-height: 1.7;
+  }
+
+  /* H1 headlines */
+  h1 {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  /* H2 section headings */
+  h2 {
+    font-size: 28px;
+  }
+
+  /* Article H1 */
+  .article-title {
+    font-size: 36px;
+    line-height: 1.1;
+  }
+
+  /* Article body paragraphs */
+  .article-prose p {
+    font-size: 18px;
+    line-height: 1.9;
+  }
+
+  /* Article H2 */
+  .article-prose h2 {
+    font-size: 26px;
+  }
+
+  /* Cormorant italic instances — hardest to read small */
+  .pullquote__text {
+    font-size: 28px;
+  }
+
+  .article-subtitle {
+    font-size: 18px;
+  }
+
+  .booking-form .ff-sent {
+    font-size: 18px;
+  }
+
+  .note-italic {
+    font-size: 18px;
+  }
+}
