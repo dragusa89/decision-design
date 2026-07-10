@@ -118,7 +118,7 @@ a { color: inherit; text-decoration: none; }
 
 .note-italic {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: 13px;
   color: var(--muted);
   letter-spacing: 0.005em;
@@ -650,8 +650,8 @@ a { color: inherit; text-decoration: none; }
 
 .two-col__item .closing {
   margin-top: 32px;
-  font-family: var(--serif);
-  font-style: italic;
+  font-family: var(--sans);
+  font-style: normal;
   font-size: 18px;
   line-height: 1.55;
   color: var(--white);
@@ -903,9 +903,9 @@ a { color: inherit; text-decoration: none; }
   font-size: 18px;
   line-height: 1.6;
   color: #EDE8DF;
-  font-family: var(--serif);
-  font-style: italic;
-  font-weight: 400;
+  font-family: var(--sans);
+  font-style: normal;
+  font-weight: 300;
 }
 .booking-form.is-sent .ff-sent { display: block; }
 .booking-form.is-sent .ff-actions { display: none; }
@@ -927,8 +927,8 @@ a { color: inherit; text-decoration: none; }
 }
 .form-lede {
   margin-top: 24px;
-  font-family: var(--serif);
-  font-style: italic;
+  font-family: var(--sans);
+  font-style: normal;
   font-size: 16px;
   line-height: 1.6;
   color: var(--muted);
@@ -1338,7 +1338,7 @@ a { color: inherit; text-decoration: none; }
 
 .article-subtitle {
   font-family: var(--serif);
-  font-style: italic;
+  font-style: normal;
   font-size: clamp(18px, 2vw, 24px);
   color: var(--body);
   margin: 0 0 28px;
@@ -1382,7 +1382,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--serif);
   font-size: 24px;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   line-height: 1.2;
   color: #EDE8DF;
   margin: 2em 0 0.5em;
@@ -1392,7 +1392,7 @@ a { color: inherit; text-decoration: none; }
 .article-prose h3 + p { margin-top: 0; }
 
 .article-prose strong { color: var(--white); font-weight: 500; }
-.article-prose em { color: var(--white); font-style: italic; }
+.article-prose em { color: var(--white); font-style: normal; }
 
 .article-footer {
   text-align: center;
@@ -1404,8 +1404,8 @@ a { color: inherit; text-decoration: none; }
 .article-footer .hairline { display: block; margin-bottom: 48px; }
 
 .article-footer__closing {
-  font-family: var(--serif);
-  font-style: italic;
+  font-family: var(--sans);
+  font-style: normal;
   font-size: 15px;
   color: var(--muted);
   max-width: 52ch;
@@ -1483,7 +1483,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--serif);
   font-size: 20px;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   color: var(--body);
   line-height: 1.72;
   margin: 0 0 1.2em;
@@ -1518,7 +1518,7 @@ a { color: inherit; text-decoration: none; }
   font-family: var(--serif);
   font-size: 22px;
   font-weight: 300;
-  font-style: italic;
+  font-style: normal;
   color: #C9A84C;
   line-height: 1.5;
   margin: 0;
@@ -1539,7 +1539,7 @@ a { color: inherit; text-decoration: none; }
   border-top: 1px solid var(--border);
   font-family: var(--serif);
   font-size: 17px;
-  font-style: italic;
+  font-style: normal;
   font-weight: 300;
   color: var(--muted);
   line-height: 1.6;
