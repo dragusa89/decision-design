@@ -15,7 +15,7 @@
   var waves = [
     { freq: 1.6, baseAmp: 8,  phase: 0.0, speed: 0.0022, brass: false, baseOpacity: 0.42 },
     { freq: 2.5, baseAmp: 11, phase: 1.2, speed: 0.0028, brass: false, baseOpacity: 0.30 },
-    { freq: 1.1, baseAmp: 10, phase: 2.5, speed: 0.0019, brass: true,  baseOpacity: 1.00 },
+    { freq: 1.1, baseAmp: 10, phase: 2.5, speed: 0.0019, brass: true,  baseOpacity: 0.55 },
     { freq: 3.1, baseAmp: 7,  phase: 0.8, speed: 0.0040, brass: false, baseOpacity: 0.38 },
     { freq: 2.0, baseAmp: 9,  phase: 3.7, speed: 0.0025, brass: false, baseOpacity: 0.34 },
     { freq: 1.8, baseAmp: 8,  phase: 5.1, speed: 0.0033, brass: false, baseOpacity: 0.40 },
@@ -59,8 +59,8 @@
       }
 
       if (wave.brass) {
-        ctx.strokeStyle = 'rgba(201,168,76,' + opacity + ')';
-        ctx.lineWidth   = 1.5;
+        ctx.strokeStyle = 'rgba(138,107,42,' + opacity + ')';
+        ctx.lineWidth   = 1.2;
       } else {
         ctx.strokeStyle = 'rgba(58,54,48,' + opacity + ')';
         ctx.lineWidth   = 1;
