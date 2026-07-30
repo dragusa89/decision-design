@@ -4,8 +4,8 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Primary Meta Tags -->
-<meta name="title" content="Decision Design — Ádám Drágus">
-<meta name="description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the practice of designing the moments that determine whether your work lives or dies.">
+<meta name="title" content="The Diagnostic — Decision Design — Ádám Drágus">
+<meta name="description" content="A structured conversation that maps where decision control is being lost in your work. One session, and a written Clarity document you keep.">
 <meta name="author" content="Ádám Drágus">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://dragusdesign.com/diagnostic">
@@ -17,8 +17,8 @@
 <!-- Open Graph / LinkedIn / Facebook / WhatsApp -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://dragusdesign.com/diagnostic">
-<meta property="og:title" content="Decision Design — Ádám Drágus">
-<meta property="og:description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the practice of designing the moments that determine whether your work lives or dies.">
+<meta property="og:title" content="The Diagnostic — Decision Design — Ádám Drágus">
+<meta property="og:description" content="A structured conversation that maps where decision control is being lost in your work. One session, and a written Clarity document you keep.">
 <meta property="og:image" content="https://dragusdesign.com/assets/social-share.png">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Decision Design">
@@ -26,13 +26,13 @@
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:url" content="https://dragusdesign.com/diagnostic">
-<meta name="twitter:title" content="Decision Design — Ádám Drágus">
-<meta name="twitter:description" content="Design doesn't fail because it's weak. It fails at the table. Decision Design is the moments that determine whether your work lives or dies.">
+<meta name="twitter:title" content="The Diagnostic — Decision Design — Ádám Drágus">
+<meta name="twitter:description" content="A structured conversation that maps where decision control is being lost in your work. One session, and a written Clarity document you keep.">
 <meta name="twitter:image" content="https://dragusdesign.com/assets/social-share.png">
-<title>The Diagnostic — Decision Design</title>
+<title>The Diagnostic — Decision Design — Ádám Drágus</title>
 <link rel="stylesheet" href="styles.css" />
+<style>.hero h1 { font-size: 42px; } @media (max-width: 768px) { .hero h1 { font-size: 28px; } }</style>
 <script src="site.js" defer></script>
-<script src="hero-canvas.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VHQS68PFT"></script>
 <script>
@@ -41,193 +41,169 @@
   gtag('js', new Date());
   gtag('config', 'G-9VHQS68PFT');
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "The Diagnostic",
+  "url": "https://dragusdesign.com/diagnostic",
+  "description": "A structured conversation that maps where decision control is being lost in your work. One session, and a written Clarity document you keep.",
+  "author": { "@type": "Person", "name": "Ádám Drágus", "url": "https://dragusdesign.com/about" }
+}
+</script>
 </head>
 <body>
 
 <header class="nav">
   <a class="nav__brand" href="index.html">Ádám Drágus<span class="slash">/</span>Decision Design</a>
-    <nav class="nav__links" aria-label="Primary">
+  <nav class="nav__links" aria-label="Primary">
     <a class="nav__link" href="writing.html">Writing</a>
+    <a class="nav__link is-active" href="diagnostic.html">The Diagnostic</a>
     <a class="nav__link" href="about.html">About</a>
-    <span class="nav__lang"><span class="nav__lang-active">EN</span><span class="nav__lang-sep"> / </span><a class="nav__lang-option" href="#">HU</a></span>
-    </nav>
-  <button class="nav__menu-toggle" aria-label="Open menu">Menu</button>
+    <a class="nav__link" href="contact.html">Contact</a>
+  </nav>
+  <button class="nav__menu-toggle">Menu</button>
 </header>
 
-<aside class="mobile-nav" aria-hidden="true">
+<aside class="mobile-nav">
   <div class="mobile-nav__close-row"><button class="link-ghost" data-close>Close</button></div>
-    <div class="mobile-nav__links">
+  <div class="mobile-nav__links">
     <a class="mobile-nav__link" href="writing.html">Writing</a>
+    <a class="mobile-nav__link is-active" href="diagnostic.html">The Diagnostic</a>
     <a class="mobile-nav__link" href="about.html">About</a>
+    <a class="mobile-nav__link" href="contact.html">Contact</a>
   </div>
 </aside>
 
 <main>
-<section class="hero hero--with-canvas container" data-screen-label="01 Diagnostic — Hero">
-  <canvas class="hero-canvas" data-density="0.7" data-intensity="0.7" aria-hidden="true"></canvas>
+
+<!-- ============== HERO ============== -->
+<section class="hero container" data-screen-label="01 Diagnostic — Hero">
   <div class="reveal"><span class="eyebrow hero__eyebrow">The Diagnostic</span></div>
-  <h1 class="reveal" style="--reveal-delay:120ms">
-    Clarity about the problem<br/>is the <em>first act</em><br/>of solving it.
+  <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 300;">
+    Most people know something is off.<br/>Few can name where.
   </h1>
-  <p class="hero__lede reveal" style="--reveal-delay:260ms">
-    Most designers know something is wrong with how their decisions are being handled. Very few have seen it clearly enough to know where to start.
+  <p class="hero__lede reveal" style="--reveal-delay:260ms; max-width: 560px;">
+    The Diagnostic is a structured conversation that maps where decision control is being lost in your work — which conversations are happening without you, and what frame is being set before you arrive.
   </p>
-  <aside class="hero__meta" aria-hidden="true">
-    <span class="hero__meta-line is-gold">№ 02 — Diagnostic</span>
-    <span class="hero__meta-line">Duration <span class="num">60–90 min</span></span>
-    <span class="hero__meta-line">Format <span class="num">1:1</span></span>
-  </aside>
 </section>
 
 <hr class="divider" />
 
-<!-- WHAT IT IS / ISN'T -->
+<!-- ============== WHAT IT IS ============== -->
 <section class="section" data-screen-label="02 Diagnostic — What it is">
   <div class="container">
-    <header class="section__head reveal">
-      <span class="hairline"></span>
-      <span class="label">A Filter, Not a Funnel</span>
-      <h2 style="margin-top:24px;">One conversation.<br/>Two clear definitions.</h2>
-    </header>
-
-    <div class="two-col reveal">
-      <div class="two-col__item">
-        <h3>What It Is</h3>
-        <ul>
-          <li>A structured 60–90 minute conversation.</li>
-          <li>We map your decision environment.</li>
-          <li>Where are you losing control?</li>
-          <li>Which conversations are bypassing you?</li>
-          <li>What frame is being set before you arrive?</li>
-        </ul>
-        <p class="closing">You leave with a clear picture of your situation and a frame for how to approach it.</p>
+    <div class="split">
+      <div class="split__label reveal">
+        <span class="hairline"></span>
+        <span class="label">What it is</span>
       </div>
-      <div class="two-col__item">
-        <h3>What It Isn't</h3>
-        <ul>
-          <li>Not a free intro call.</li>
-          <li>Not a UX audit.</li>
-          <li>Not a coaching session.</li>
-          <li>Not a pitch for further services.</li>
-        </ul>
-        <p class="closing">The Diagnostic stands on its own.<br/>It's not a funnel — <em>it's a filter.</em></p>
+      <div class="split__body prose reveal" style="--reveal-delay:160ms; max-width: 560px;">
+        <p>One session, 60 to 90 minutes.</p>
+        <p>We work through your actual situation — a specific client, a specific stakeholder, a specific negotiation.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- AFTER THE SESSION -->
-<section class="section surface" data-screen-label="03 Diagnostic — After">
+<hr class="divider" />
+
+<!-- ============== HOW IT WORKS ============== -->
+<section class="section" data-screen-label="03 Diagnostic — How it works">
   <div class="container">
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label">After the Session</span>
-        <h2>Three doors.<br/>You choose.</h2>
+        <span class="label">How it works</span>
       </div>
       <div class="split__body reveal" style="--reveal-delay:160ms">
-        <div class="services" style="border-top:0;">
-          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
-            <span class="service__num">i.</span>
-            <div class="service__body">
-              <h3 style="font-size:22px;">You run with it yourself.</h3>
-              <p>You take the clarity you've gained and apply it. Many people do exactly this — and that's the point.</p>
+        <div>
+          <div style="display:flex; gap: 32px; padding: 28px 0; border-top: 1px solid var(--border);">
+            <span style="font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--border); flex-shrink: 0; min-width: 44px; line-height: 1;">01</span>
+            <div>
+              <p style="font-family: var(--serif); font-size: 20px; color: var(--heading); margin-bottom: 8px; font-weight: 400;">You apply</p>
+              <p style="font-family: var(--sans); font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0;">A short description of what is going on. Two paragraphs is enough.</p>
             </div>
           </div>
-          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0;">
-            <span class="service__num">ii.</span>
-            <div class="service__body">
-              <h3 style="font-size:22px;">A defined engagement.</h3>
-              <p>We continue with a specific scope — a pitch, a negotiation, a relationship. Fixed range.</p>
+          <div style="display:flex; gap: 32px; padding: 28px 0; border-top: 1px solid var(--border);">
+            <span style="font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--border); flex-shrink: 0; min-width: 44px; line-height: 1;">02</span>
+            <div>
+              <p style="font-family: var(--serif); font-size: 20px; color: var(--heading); margin-bottom: 8px; font-weight: 400;">I write back</p>
+              <p style="font-family: var(--sans); font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0;">If it is a fit, I will reach out with dates. If it is not, I will say so directly.</p>
             </div>
           </div>
-          <div class="service" style="grid-template-columns: 80px 1fr; padding: 32px 0; border-bottom:0;">
-            <span class="service__num">iii.</span>
-            <div class="service__body">
-              <h3 style="font-size:22px;">An ongoing retainer.</h3>
-              <p>By invitation only. Discussed only if it's a clear fit, and never on the day of the Diagnostic.</p>
+          <div style="display:flex; gap: 32px; padding: 28px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+            <span style="font-family: var(--serif); font-size: 32px; font-weight: 300; color: var(--border); flex-shrink: 0; min-width: 44px; line-height: 1;">03</span>
+            <div>
+              <p style="font-family: var(--serif); font-size: 20px; color: var(--heading); margin-bottom: 8px; font-weight: 400;">We talk</p>
+              <p style="font-family: var(--sans); font-size: 14px; color: var(--muted); line-height: 1.65; margin: 0;">One session, based on what you sent. You get the clarity document.</p>
             </div>
           </div>
         </div>
-        <p class="note-italic" style="margin-top:32px; font-size:15px;">Either way, the Diagnostic stands on its own. You won't be asked to buy anything in the room.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- PRICING -->
-<section class="section" data-screen-label="04 Diagnostic — Pricing">
+<hr class="divider" />
+
+<!-- ============== WHAT YOU GET ============== -->
+<section class="section surface" data-screen-label="04 Diagnostic — What you get">
   <div class="container">
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label">Investment</span>
-        <h2>Pricing depends<br/>on your context.</h2>
+        <span class="label">What you get</span>
       </div>
       <div class="split__body reveal" style="--reveal-delay:160ms">
-        <div class="pricing-block" style="border-top:0; padding-top:0;">
-          <p class="pricing-block__detail">Each audience has a fixed price — shown on their respective page.</p>
-          <div class="pricing-block__links">
-            <a href="freelancers.html">For Freelancers</a>
-            <a href="agencies.html">For Agencies</a>
-            <a href="leaders.html">For Design Leaders</a>
-          </div>
-        </div>
+        <h2 style="font-weight: 300; font-size: 32px; margin-bottom: 20px;">A Clarity document.</h2>
+        <p style="max-width: 560px; margin-bottom: 1.4em;">After the session you receive a written overview of your situation. It covers what came out of the conversation, what I observed, where the leverage sits, and what changes if you act on it.</p>
+        <p style="max-width: 560px; margin: 0;">It is yours to keep and use, whether or not we work together again.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- BOOKING FORM -->
-<section class="section surface" data-screen-label="05 Diagnostic — Book">
+<!-- ============== APPLY ============== -->
+<section class="section" data-screen-label="05 Diagnostic — Apply">
   <div class="container">
     <div class="split">
       <div class="split__label reveal">
         <span class="hairline"></span>
-        <span class="label">Book a Session</span>
-        <h2>The form is<br/>also the filter.<br/><em>Write it in earnest.</em></h2>
-        <p style="margin-top:32px; font-family:var(--serif); font-style:italic; font-size:16px; line-height:1.6; color:var(--muted);">I read every submission personally. If it's not a fit, I'll write back and say so. No hard feelings, no sales follow-up.</p>
+        <span class="label">Apply</span>
+        <h2 style="font-weight: 300; font-size: 32px; margin-top: 24px;">Tell me what is going on.</h2>
+        <p class="form-lede">I read every application and write back.</p>
       </div>
-
-      <form class="booking-form reveal" name="diagnostic-booking" data-netlify="true" style="--reveal-delay:160ms">
-        <input type="hidden" name="form-name" value="diagnostic-booking" />
+      <form class="booking-form reveal" name="diagnostic-application" data-netlify="true" netlify-honeypot="bot-field" style="--reveal-delay:160ms">
+        <input type="hidden" name="form-name" value="diagnostic-application" />
+        <p class="bot-trap" aria-hidden="true"><label>Leave empty: <input name="bot-field" tabindex="-1" autocomplete="off" /></label></p>
         <div class="ff-field">
-          <label for="b-name">Name</label>
-          <input id="b-name" name="name" type="text" required autocomplete="name" />
+          <label for="da-name">Your name *</label>
+          <input id="da-name" name="name" type="text" required autocomplete="name" />
         </div>
         <div class="ff-field">
-          <label for="b-email">Email</label>
-          <input id="b-email" name="email" type="email" required autocomplete="email" />
+          <label for="da-email">Email *</label>
+          <input id="da-email" name="email" type="email" required autocomplete="email" />
         </div>
         <div class="ff-field">
-          <label for="b-role">Who you are</label>
-          <select id="b-role" name="role" required>
-            <option value="" disabled selected>Choose one</option>
-            <option value="freelancer">Senior freelancer / independent designer</option>
-            <option value="agency">Agency principal or partner</option>
-            <option value="leader">Corporate design leader</option>
-            <option value="other">Other</option>
-          </select>
+          <label for="da-role">What do you do?</label>
+          <input id="da-role" name="role" type="text" placeholder="Role, company, or how you work" autocomplete="off" />
         </div>
         <div class="ff-field">
-          <label for="b-window">Preferred window</label>
-          <input id="b-window" name="preferred-window" type="text" placeholder="e.g. any weekday morning, CET" autocomplete="off" />
-        </div>
-        <div class="ff-field">
-          <label for="b-situation">The situation <em class="serif">(two paragraphs)</em></label>
-          <textarea id="b-situation" name="situation" rows="7" required placeholder="Where are you losing control of the frame? What conversation is coming up that you'd handle differently if you saw it clearly?"></textarea>
+          <label for="da-situation">What is going on? *</label>
+          <textarea id="da-situation" name="situation" rows="6" required placeholder="A couple of paragraphs is enough."></textarea>
         </div>
         <div class="ff-actions">
           <button type="submit" class="cta cta--solid">Send<span class="cta__arrow">→</span></button>
-          <span class="note-italic">I'll write back within one working day.</span>
         </div>
-        <p class="ff-sent">Thank you. I'll write back within one working day. — Á.</p>
+        <p class="ff-sent" style="font-family: 'DM Sans', sans-serif; font-size: 18px; color: #EDE8DF; font-style: normal;">Thank you. I will write back shortly. — Á.</p>
       </form>
     </div>
   </div>
 </section>
 
-<footer class="footer">
+<!-- ============== FOOTER ============== -->
+<footer class="footer" data-screen-label="06 Footer">
   <div class="container">
     <div class="footer__row">
       <div class="footer__col">
@@ -235,27 +211,21 @@
         <p style="font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 300; color: #5C5648; letter-spacing: 0.05em; margin-top: 6px;">Decision Design shows you where the invisible decision points are that limit the designer's influence — and how to leverage them.</p>
       </div>
       <div class="footer__col">
-        <h4>Practice</h4>
-        <ul>
-          <li><a href="diagnostic.html">The Diagnostic</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>Engagements</h4>
-        <ul>
-          <li><a href="freelancers.html">For Freelancers</a></li>
-          <li><a href="agencies.html">For Agencies</a></li>
-          <li><a href="leaders.html">For Design Leaders</a></li>
-          <li><a href="workshop.html">Workshop</a></li>
-        </ul>
-      </div>
-      <div class="footer__col">
-        <h4>More</h4>
         <ul>
           <li><a href="writing.html">Writing</a></li>
+          <li><a href="diagnostic.html">The Diagnostic</a></li>
+          <li><a href="about.html">About</a></li>
           <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul>
           <li><a href="mailto:adam@dragusdesign.com">adam@dragusdesign.com</a></li>
+          <li><a href="https://www.linkedin.com/in/adamdragus/" target="_blank" rel="noopener">LinkedIn</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <ul>
           <li><a href="imprint.html">Imprint</a></li>
         </ul>
       </div>
@@ -268,8 +238,7 @@
 </footer>
 
 <div class="page-marker"><span class="num">02</span>The Diagnostic</div>
+
 </main>
-
-
 </body>
 </html>
