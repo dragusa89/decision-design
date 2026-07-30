@@ -33,14 +33,15 @@
 <link rel="stylesheet" href="styles.css" />
 <style>
   .hero h1 { font-size: 42px; }
-  .clarity-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 64px; }
-  .clarity-grid__label { display: flex; flex-direction: column; }
-  .clarity-grid__image { margin-top: 32px; width: 100%; max-width: 320px; display: block; }
+  .clarity-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 64px; align-items: center; }
+  .clarity-grid__image { width: 100%; max-width: 360px; display: block; }
   @media (max-width: 768px) {
     .hero h1 { font-size: 28px; }
     .clarity-grid { grid-template-columns: 1fr; gap: 0; }
-    .clarity-grid__image { max-width: 240px; margin-left: auto; margin-right: auto; margin-top: 40px; }
-    .clarity-grid__body { margin-top: 40px; }
+    .clarity-grid > div:first-child { order: 2; margin-top: 40px; }
+    .clarity-grid__body { order: 1; }
+    .clarity-grid__image { max-width: 240px; margin-left: auto; margin-right: auto; }
+    .clarity-grid__body > h2 { margin-top: 40px; }
   }
 </style>
 <script src="site.js" defer></script>
@@ -162,13 +163,13 @@
 <section class="section surface" data-screen-label="04 Diagnostic — What you get">
   <div class="container">
     <div class="clarity-grid reveal">
-      <div class="clarity-grid__label">
-        <span class="hairline"></span>
-        <span class="label">What you get</span>
+      <div>
         <img class="clarity-grid__image" src="/assets/dd-clarity-doc-image.png" alt="A Clarity document — sample overview">
       </div>
       <div class="clarity-grid__body" style="--reveal-delay:160ms">
-        <h2 style="font-weight: 300; font-size: 32px; margin-bottom: 20px;">A Clarity document.</h2>
+        <span class="hairline"></span>
+        <span class="label">What you get</span>
+        <h2 style="font-weight: 300; font-size: 32px; margin-bottom: 20px; margin-top: 20px;">A Clarity document.</h2>
         <p style="max-width: 560px; margin-bottom: 1.4em;">After the session you receive a written overview of your situation. It covers what came out of the conversation, what I observed, where the leverage sits, and what changes if you act on it.</p>
         <p style="max-width: 560px; margin: 0;">It is yours to keep and use, whether or not we work together again.</p>
       </div>
