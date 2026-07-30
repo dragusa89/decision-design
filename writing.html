@@ -31,16 +31,8 @@
 <meta name="twitter:image" content="https://dragusdesign.com/assets/social-share.png">
 <title>Writing — Decision Design</title>
 <link rel="stylesheet" href="styles.css" />
-<style>
-  .section--hero h1 { font-size: 42px; }
-  @media (max-width: 768px) { .section--hero h1 { font-size: 28px; } }
-  #writingCanvas {
-    -webkit-mask-image: linear-gradient(to bottom, transparent 55%, black 72%);
-    mask-image: linear-gradient(to bottom, transparent 55%, black 72%);
-  }
-</style>
+<style>.section--hero h1 { font-size: 42px; } @media (max-width: 768px) { .section--hero h1 { font-size: 28px; } }</style>
 <script src="site.js" defer></script>
-<script src="writing-canvas.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VHQS68PFT"></script>
 <script>
@@ -74,8 +66,7 @@
 </aside>
 
 <main>
-<section class="section section--hero hero--with-canvas" data-screen-label="01 Writing — Hero">
-  <canvas class="hero-canvas" id="writingCanvas" aria-hidden="true"></canvas>
+<section class="section section--hero" data-screen-label="01 Writing — Hero">
   <div class="container">
     <div class="reveal"><span class="eyebrow hero__eyebrow">Writing</span></div>
     <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 300">
