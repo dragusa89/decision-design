@@ -45,6 +45,7 @@
   }
 </style>
 <script src="site.js" defer></script>
+<script src="diagnostic-canvas.js" defer></script>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-9VHQS68PFT"></script>
 <script>
@@ -90,7 +91,8 @@
 <main>
 
 <!-- ============== HERO ============== -->
-<section class="hero container" data-screen-label="01 Diagnostic — Hero">
+<section class="hero hero--with-canvas container" data-screen-label="01 Diagnostic — Hero">
+  <canvas class="hero-canvas" id="waveCanvas" aria-hidden="true"></canvas>
   <div class="reveal"><span class="eyebrow hero__eyebrow">The Diagnostic</span></div>
   <h1 class="reveal" style="--reveal-delay:120ms; font-weight: 300;">
     Most people know something is off.<br/>Few can name where.
