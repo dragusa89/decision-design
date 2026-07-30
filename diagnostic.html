@@ -35,6 +35,10 @@
   .hero h1 { font-size: 42px; }
   .clarity-grid { display: grid; grid-template-columns: 2fr 3fr; gap: 64px; align-items: center; }
   .clarity-grid__image { width: 100%; max-width: 360px; display: block; }
+  #waveCanvas {
+    -webkit-mask-image: linear-gradient(to bottom, transparent 58%, black 76%);
+    mask-image: linear-gradient(to bottom, transparent 58%, black 76%);
+  }
   @media (max-width: 768px) {
     .hero h1 { font-size: 28px; }
     .clarity-grid { grid-template-columns: 1fr; gap: 0; }
