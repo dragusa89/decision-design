@@ -717,21 +717,6 @@ a { color: inherit; text-decoration: none; }
 
 /* Decision Leaks chip section ------------------------------------------- */
 
-/* Diagnostic CTA (article pages) ---------------------------------------- */
-/* Label, CTA and body copy reuse the shared .label / .cta / body styles;
-   only the heading scale and vertical rhythm need setting here. */
-
-.diagnostic-cta-section h2 {
-  font-size: 32px;
-  margin-top: 24px;
-  margin-bottom: 20px;
-}
-
-.diagnostic-cta-section p { margin-bottom: 28px; }
-
-@media (max-width: 768px) {
-  .diagnostic-cta-section h2 { font-size: 28px; }
-}
 
 .leak-section {
   margin-top: 48px;
