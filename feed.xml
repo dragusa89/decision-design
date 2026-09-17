@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Decision Design — Ádám Drágus</title>
+    <link>https://dragusdesign.com/writing</link>
+    <description>Writing on the decisions that shape design outcomes.</description>
+    <language>en</language>
+    <atom:link href="https://dragusdesign.com/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>Beauty Contest or an Inevitable Story: A Conversation with Brett Wickens</title>
+      <link>https://dragusdesign.com/writing/brett-wickens-interview</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/brett-wickens-interview</guid>
+      <description>He moved Peter Saville's studio onto the Macintosh in the 1980s. Thirty years later, he names exactly what's been lost in the move to screens.</description>
+      <pubDate>Mon, 03 Aug 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Knowing something and knowing it under pressure are two different kinds.</title>
+      <link>https://dragusdesign.com/writing/repetition-is-key-for-frameworks</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/repetition-is-key-for-frameworks</guid>
+      <description>Knowing a framework calmly and running it under pressure are two different skills.</description>
+      <pubDate>Sun, 02 Aug 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Don't Be the Stain Remover Agent</title>
+      <link>https://dragusdesign.com/writing/dont-be-the-stain-remover-agent</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/dont-be-the-stain-remover-agent</guid>
+      <description>Unsolicited help still lands as an intrusion — even when the product works.</description>
+      <pubDate>Sat, 01 Aug 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Being Right Is Not the Currency in Design</title>
+      <link>https://dragusdesign.com/writing/being-right-is-not-the-currency-in-design</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/being-right-is-not-the-currency-in-design</guid>
+      <description>A detailed brief isn't help — it's a solved problem with no room left for design.</description>
+      <pubDate>Mon, 06 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Reading the Room, Part One: The Glass of Water</title>
+      <link>https://dragusdesign.com/writing/reading-the-room-the-glass-of-water</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/reading-the-room-the-glass-of-water</guid>
+      <description>Before a client says anything real, the room has already told you how the project will go.</description>
+      <pubDate>Sun, 05 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Don't Argue With the Gut. Redirect It.</title>
+      <link>https://dragusdesign.com/writing/dont-argue-with-the-gut-redirect-it</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/dont-argue-with-the-gut-redirect-it</guid>
+      <description>More justification doesn't clear a decision-maker's doubt. It adds noise.</description>
+      <pubDate>Sat, 04 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Don't Brood Over It. Just Pick Up the Phone and Have a Conversation</title>
+      <link>https://dragusdesign.com/writing/dont-brood-over-it-pick-up-the-phone</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/dont-brood-over-it-pick-up-the-phone</guid>
+      <description>Forty-eight comments aren't a to-do list. They're one message with a shape and a weight.</description>
+      <pubDate>Fri, 03 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Home Office and Online Meetings In, Small but Important Conversations Out</title>
+      <link>https://dragusdesign.com/writing/home-office-and-online-meetings</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/home-office-and-online-meetings</guid>
+      <description>Every conversation at work has become an event. The ones that didn't warrant a calendar slot have simply stopped happening.</description>
+      <pubDate>Thu, 02 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>The Work Does Not Speak for Itself</title>
+      <link>https://dragusdesign.com/writing/the-work-does-not-speak-for-itself</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/the-work-does-not-speak-for-itself</guid>
+      <description>Expecting clients to read design the way you do is the first mistake. Here's what happens instead.</description>
+      <pubDate>Wed, 01 Jul 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Before the Meeting: A Conversation with Erik Spiekermann</title>
+      <link>https://dragusdesign.com/writing/spiekermann-interview</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/spiekermann-interview</guid>
+      <description>On studio culture, the conversations that happen on staircases, and what designers lose when they stop being in the same room.</description>
+      <pubDate>Tue, 02 Jun 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Why Do We Feel the Need to Show Three Concepts Instead of One?</title>
+      <link>https://dragusdesign.com/writing/why-show-three-concepts-instead-of-one</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/why-show-three-concepts-instead-of-one</guid>
+      <description>Three concepts isn't a methodology. It's a fear response.</description>
+      <pubDate>Mon, 01 Jun 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>AI POCs Are the New Briefs</title>
+      <link>https://dragusdesign.com/writing/ai-pocs-are-the-new-briefs</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/ai-pocs-are-the-new-briefs</guid>
+      <description>Your client built your brief in Claude. They just don't know it yet.</description>
+      <pubDate>Thu, 07 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Task Lists Don't Build Products. Conversations Do.</title>
+      <link>https://dragusdesign.com/writing/task-lists-dont-build-products</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/task-lists-dont-build-products</guid>
+      <description>What travels between departments isn't a project. It's a task list — and that gap is where products go wrong.</description>
+      <pubDate>Wed, 06 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Agencies Must Price the Outcome, Not the Output</title>
+      <link>https://dragusdesign.com/writing/agencies-must-price-the-outcome</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/agencies-must-price-the-outcome</guid>
+      <description>The moment you start defending your price, you've already lost the negotiation.</description>
+      <pubDate>Tue, 05 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>The Freelancer's Real Problem Isn't Pricing. It's Client Fit.</title>
+      <link>https://dragusdesign.com/writing/the-freelancers-real-problem-isnt-pricing</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/the-freelancers-real-problem-isnt-pricing</guid>
+      <description>The scarcity mindset is the real problem. Not your pricing. Not your portfolio.</description>
+      <pubDate>Mon, 04 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Why Corporate Design Leaders Lose Influence (And How to Get It Back)</title>
+      <link>https://dragusdesign.com/writing/why-corporate-design-leaders-lose-influence</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/why-corporate-design-leaders-lose-influence</guid>
+      <description>You have a seat at the table. Somehow you still have no control over the decisions that get made.</description>
+      <pubDate>Sun, 03 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Meetings Are for Declarations, Not for Decisions</title>
+      <link>https://dragusdesign.com/writing/meetings-are-for-declarations</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/meetings-are-for-declarations</guid>
+      <description>The meeting was already decided before anyone walked in. The question is whether you designed the outcome.</description>
+      <pubDate>Sat, 02 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>The Skill Designers Can't Automate</title>
+      <link>https://dragusdesign.com/writing/the-skill-designers-cant-automate</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/the-skill-designers-cant-automate</guid>
+      <description>Why AI didn't replace designers — it removed their invisible line of defense.</description>
+      <pubDate>Fri, 01 May 2026 09:00:00 +0200</pubDate>
+    </item>
+
+    <item>
+      <title>Why Decision Design Exists</title>
+      <link>https://dragusdesign.com/writing/why-decision-design-exists</link>
+      <guid isPermaLink="true">https://dragusdesign.com/writing/why-decision-design-exists</guid>
+      <description>Most design problems are not design problems. They are conversation problems that happened before anyone opened a file.</description>
+      <pubDate>Wed, 01 Apr 2026 09:00:00 +0200</pubDate>
+    </item>
+
+  </channel>
+</rss>
