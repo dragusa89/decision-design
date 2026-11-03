@@ -723,6 +723,10 @@ a { color: inherit; text-decoration: none; }
   margin-bottom: 48px;
 }
 
+/* Decision Leaks temporarily hidden — delete this one rule to show them again.
+   The markup is left intact in every article. */
+.leak-section { display: none; }
+
 .leak-section-label {
   font-family: var(--sans);
   font-size: 10px;
